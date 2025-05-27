@@ -1,0 +1,312 @@
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://irkb.com/ir-ontology#hasAffectedAsset
+<http://irkb.com/ir-ontology#hasAffectedAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://irkb.com/ir-ontology#hasAffectedAsset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasAffectedAsset> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Asset> .
+# 
+# http://irkb.com/ir-ontology#hasAnalyst
+<http://irkb.com/ir-ontology#hasAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://irkb.com/ir-ontology#hasAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
+<http://irkb.com/ir-ontology#hasAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
+# 
+# http://irkb.com/ir-ontology#hasCoa
+<http://irkb.com/ir-ontology#hasCoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://irkb.com/ir-ontology#hasCoa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasCoa> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#CourseOfAction> .
+# 
+# http://irkb.com/ir-ontology#hasCoaCreationAnalyst
+<http://irkb.com/ir-ontology#hasCoaCreationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://irkb.com/ir-ontology#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
+# 
+# http://irkb.com/ir-ontology#hasConfirmationAnalyst
+<http://irkb.com/ir-ontology#hasConfirmationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://irkb.com/ir-ontology#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
+# 
+# http://irkb.com/ir-ontology#hasEvent
+<http://irkb.com/ir-ontology#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://irkb.com/ir-ontology#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#SecurityEvent> .
+# 
+# http://www.w3.org/ns/prov#generated
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#SecurityAnalysis> .
+# 
+# http://www.w3.org/ns/prov#used
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#SecurityAnalysis> .
+# 
+# http://www.w3.org/ns/prov#wasAssociatedWith
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Asset> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Incident> .
+# 
+# http://www.w3.org/ns/prov#wasGeneratedBy
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#SecurityEvent> .
+# 
+# http://www.w3.org/ns/prov#wasPerformedBy
+<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
+<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://irkb.com/ir-ontology#hasAnalystEmail
+<http://irkb.com/ir-ontology#hasAnalystEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasAnalystId
+<http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasChatMessage
+<http://irkb.com/ir-ontology#hasChatMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
+<http://irkb.com/ir-ontology#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasChatMessageDateTime
+<http://irkb.com/ir-ontology#hasChatMessageDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
+<http://irkb.com/ir-ontology#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://irkb.com/ir-ontology#hasChatSentiment
+<http://irkb.com/ir-ontology#hasChatSentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
+<http://irkb.com/ir-ontology#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasCoaCreationDateTime
+<http://irkb.com/ir-ontology#hasCoaCreationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://irkb.com/ir-ontology#hasCoaDescription
+<http://irkb.com/ir-ontology#hasCoaDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasCoaNotes
+<http://irkb.com/ir-ontology#hasCoaNotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasCoaNotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#hasCoaNotes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasCoaStatus
+<http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasConfirmationDateTime
+<http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://irkb.com/ir-ontology#hasDomain
+<http://irkb.com/ir-ontology#hasDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasDomain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Application> .
+<http://irkb.com/ir-ontology#hasDomain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasEmailAddress
+<http://irkb.com/ir-ontology#hasEmailAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasEmailAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Email> .
+<http://irkb.com/ir-ontology#hasEmailAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasEndDateTime
+<http://irkb.com/ir-ontology#hasEndDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://irkb.com/ir-ontology#hasEventActivity
+<http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasEventActivityDateTime
+<http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://irkb.com/ir-ontology#hasEventDescription
+<http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasEventId
+<http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasHostname
+<http://irkb.com/ir-ontology#hasHostname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasHostname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Server> .
+<http://irkb.com/ir-ontology#hasHostname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasIncidentDescription
+<http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasIncidentId
+<http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasIncidentName
+<http://irkb.com/ir-ontology#hasIncidentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasIncidentSeverity
+<http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasIncidentType
+<http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasIpAddress
+<http://irkb.com/ir-ontology#hasIpAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasIpAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Server> .
+<http://irkb.com/ir-ontology#hasIpAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://irkb.com/ir-ontology#hasSecurityAnalysisDetails
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasSecurityAnalysisType
+<http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://irkb.com/ir-ontology#hasUrl
+<http://irkb.com/ir-ontology#hasUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Application> .
+<http://irkb.com/ir-ontology#hasUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://irkb.com/ir-ontology#hasUsername
+<http://irkb.com/ir-ontology#hasUsername> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://irkb.com/ir-ontology#hasUsername> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Application> .
+<http://irkb.com/ir-ontology#hasUsername> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://irkb.com/ir-ontology#Analyst
+<http://irkb.com/ir-ontology#Analyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Analyst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://irkb.com/ir-ontology#Application
+<http://irkb.com/ir-ontology#Application> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Application> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Asset> .
+# 
+# http://irkb.com/ir-ontology#Asset
+<http://irkb.com/ir-ontology#Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Asset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://irkb.com/ir-ontology#Containment
+<http://irkb.com/ir-ontology#Containment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Containment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+# 
+# http://irkb.com/ir-ontology#CourseOfAction
+<http://irkb.com/ir-ontology#CourseOfAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#CourseOfAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://irkb.com/ir-ontology#DetectionAndAnalysis
+<http://irkb.com/ir-ontology#DetectionAndAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#DetectionAndAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+# 
+# http://irkb.com/ir-ontology#Email
+<http://irkb.com/ir-ontology#Email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Email> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Asset> .
+# 
+# http://irkb.com/ir-ontology#Eradication
+<http://irkb.com/ir-ontology#Eradication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Eradication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+# 
+# http://irkb.com/ir-ontology#Incident
+<http://irkb.com/ir-ontology#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://irkb.com/ir-ontology#PostIncidentActivity
+<http://irkb.com/ir-ontology#PostIncidentActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#PostIncidentActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+# 
+# http://irkb.com/ir-ontology#Recovery
+<http://irkb.com/ir-ontology#Recovery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Recovery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+# 
+# http://irkb.com/ir-ontology#ResponderCommunication
+<http://irkb.com/ir-ontology#ResponderCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://irkb.com/ir-ontology#SecurityAnalysis
+<http://irkb.com/ir-ontology#SecurityAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://irkb.com/ir-ontology#SecurityEvent
+<http://irkb.com/ir-ontology#SecurityEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#SecurityEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+# 
+# http://irkb.com/ir-ontology#Server
+<http://irkb.com/ir-ontology#Server> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Server> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Asset> .
+# 
+# http://irkb.com/ir-ontology#Tier1
+<http://irkb.com/ir-ontology#Tier1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Tier1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Analyst> .
+# 
+# http://irkb.com/ir-ontology#Tier2
+<http://irkb.com/ir-ontology#Tier2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Tier2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Analyst> .
+# 
+# http://irkb.com/ir-ontology#Tier3
+<http://irkb.com/ir-ontology#Tier3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Tier3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Analyst> .
+# 
+# http://irkb.com/ir-ontology#Workstation
+<http://irkb.com/ir-ontology#Workstation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Workstation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Asset> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
