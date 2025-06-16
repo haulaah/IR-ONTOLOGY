@@ -3,489 +3,364 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@base <http://irkb.com/ir-ontology> .
+@base <http://www.w3.org/2002/07/owl#> .
 
-<http://irkb.com/ir-ontology>
-    rdf:type owl:Ontology ;
-    rdfs:label "Incident Response Ontology"@en ;
-    dct:title "Incident Response Knowledge Base Ontology"@en ;
-    dct:description "An ontology for modeling cybersecurity incident response processes, assets, analysts, and their interactions."@en ;
-    dct:created "2023-01-01"^^xsd:date ;
-    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
-    dct:creator "IRKB Team" .
+[ rdf:type owl:Ontology
+ ] .
 
 #################################################################
 #    Object Properties
 #################################################################
 
 ###  http://irkb.com/ir-ontology#hasAffectedAsset
-<http://irkb.com/ir-ontology#hasAffectedAsset> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "has affected asset"@en ;
-    rdfs:comment "Links an incident to the asset that was impacted during the security event."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range <http://irkb.com/ir-ontology#Asset> .
+<http://irkb.com/ir-ontology#hasAffectedAsset> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                               rdfs:range <http://irkb.com/ir-ontology#Asset> .
+
 
 ###  http://irkb.com/ir-ontology#hasAnalyst
-<http://irkb.com/ir-ontology#hasAnalyst> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "has analyst"@en ;
-    rdfs:comment "Associates a responder communication with the analyst involved."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#ResponderCommunication> ;
-    rdfs:range <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#hasAnalyst> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <http://irkb.com/ir-ontology#ResponderCommunication> ;
+                                         rdfs:range <http://irkb.com/ir-ontology#Analyst> .
+
 
 ###  http://irkb.com/ir-ontology#hasCoa
-<http://irkb.com/ir-ontology#hasCoa> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "has course of action"@en ;
-    rdfs:comment "Links an incident to the course of action taken to address it."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#hasCoa> rdf:type owl:ObjectProperty ;
+                                     rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                     rdfs:range <http://irkb.com/ir-ontology#CourseOfAction> .
+
 
 ###  http://irkb.com/ir-ontology#hasCoaCreationAnalyst
-<http://irkb.com/ir-ontology#hasCoaCreationAnalyst> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "has COA creation analyst"@en ;
-    rdfs:comment "Indicates which analyst created the course of action."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
-    rdfs:range <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#hasCoaCreationAnalyst> rdf:type owl:ObjectProperty ;
+                                                    rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
+                                                    rdfs:range <http://irkb.com/ir-ontology#Analyst> .
+
 
 ###  http://irkb.com/ir-ontology#hasConfirmationAnalyst
-<http://irkb.com/ir-ontology#hasConfirmationAnalyst> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "has confirmation analyst"@en ;
-    rdfs:comment "Links an incident to the analyst who confirmed its validity."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#hasConfirmationAnalyst> rdf:type owl:ObjectProperty ;
+                                                     rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                                     rdfs:range <http://irkb.com/ir-ontology#Analyst> .
+
 
 ###  http://irkb.com/ir-ontology#hasEvent
-<http://irkb.com/ir-ontology#hasEvent> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "has security event"@en ;
-    rdfs:comment "Connects an incident to the security events that compose it."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://irkb.com/ir-ontology#hasEvent> rdf:type owl:ObjectProperty ;
+                                       rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                       rdfs:range <http://irkb.com/ir-ontology#SecurityEvent> .
+
 
 ###  http://www.w3.org/ns/prov#generated
-<http://www.w3.org/ns/prov#generated> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "generated"@en ;
-    rdfs:comment "Indicates that a security analysis was generated from a security event."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityEvent> ;
-    rdfs:range <http://irkb.com/ir-ontology#SecurityAnalysis> .
+<http://www.w3.org/ns/prov#generated> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <http://irkb.com/ir-ontology#SecurityEvent> ;
+                                      rdfs:range <http://irkb.com/ir-ontology#SecurityAnalysis> .
+
 
 ###  http://www.w3.org/ns/prov#used
-<http://www.w3.org/ns/prov#used> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "used"@en ;
-    rdfs:comment "Shows that a course of action utilized a specific security analysis."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
-    rdfs:range <http://irkb.com/ir-ontology#SecurityAnalysis> .
+<http://www.w3.org/ns/prov#used> rdf:type owl:ObjectProperty ;
+                                 rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
+                                 rdfs:range <http://irkb.com/ir-ontology#SecurityAnalysis> .
+
 
 ###  http://www.w3.org/ns/prov#wasAssociatedWith
-<http://www.w3.org/ns/prov#wasAssociatedWith> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "was associated with"@en ;
-    rdfs:comment "Indicates that an asset or communication was associated with an incident."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Asset>, 
-                <http://irkb.com/ir-ontology#ResponderCommunication> ;
-    rdfs:range <http://irkb.com/ir-ontology#Incident> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <http://irkb.com/ir-ontology#Asset> ,
+                                                          <http://irkb.com/ir-ontology#ResponderCommunication> ;
+                                              rdfs:range <http://irkb.com/ir-ontology#Incident> .
+
 
 ###  http://www.w3.org/ns/prov#wasGeneratedBy
-<http://www.w3.org/ns/prov#wasGeneratedBy> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "was generated by"@en ;
-    rdfs:comment "Indicates that a security analysis was generated by a security event."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ;
-    rdfs:range <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ;
+                                           rdfs:range <http://irkb.com/ir-ontology#SecurityEvent> .
+
 
 ###  http://www.w3.org/ns/prov#wasPerformedBy
-<http://www.w3.org/ns/prov#wasPerformedBy> 
-    rdf:type owl:ObjectProperty ;
-    rdfs:label "was performed by"@en ;
-    rdfs:comment "Shows that a security event or analysis was performed by a specific analyst."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis>, 
-                <http://irkb.com/ir-ontology#SecurityEvent> ;
-    rdfs:range <http://irkb.com/ir-ontology#Analyst> .
+<http://www.w3.org/ns/prov#wasPerformedBy> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ,
+                                                       <http://irkb.com/ir-ontology#SecurityEvent> ;
+                                           rdfs:range <http://irkb.com/ir-ontology#Analyst> .
+
 
 #################################################################
 #    Data properties
 #################################################################
 
 ###  http://irkb.com/ir-ontology#hasAnalystEmail
-<http://irkb.com/ir-ontology#hasAnalystEmail> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has analyst email"@en ;
-    rdfs:comment "The email address of an analyst."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Analyst> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasAnalystEmail> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://irkb.com/ir-ontology#Analyst> ;
+                                              rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasAnalystId
-<http://irkb.com/ir-ontology#hasAnalystId> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has analyst ID"@en ;
-    rdfs:comment "The unique identifier for an analyst."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Analyst> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasAnalystId> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://irkb.com/ir-ontology#Analyst> ;
+                                           rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasChatMessage
-<http://irkb.com/ir-ontology#hasChatMessage> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has chat message"@en ;
-    rdfs:comment "The content of a communication between responders."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#ResponderCommunication> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasChatMessage> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <http://irkb.com/ir-ontology#ResponderCommunication> ;
+                                             rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasChatMessageDateTime
-<http://irkb.com/ir-ontology#hasChatMessageDateTime> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has chat message datetime"@en ;
-    rdfs:comment "The timestamp when a communication occurred."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#ResponderCommunication> ;
-    rdfs:range xsd:dateTime .
+<http://irkb.com/ir-ontology#hasChatMessageDateTime> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://irkb.com/ir-ontology#ResponderCommunication> ;
+                                                     rdfs:range xsd:dateTime .
+
 
 ###  http://irkb.com/ir-ontology#hasChatSentiment
-<http://irkb.com/ir-ontology#hasChatSentiment> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has chat sentiment"@en ;
-    rdfs:comment "The sentiment analysis result of a communication."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#ResponderCommunication> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasChatSentiment> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://irkb.com/ir-ontology#ResponderCommunication> ;
+                                               rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasCoaCreationDateTime
-<http://irkb.com/ir-ontology#hasCoaCreationDateTime> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has COA creation datetime"@en ;
-    rdfs:comment "The timestamp when a course of action was created."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
-    rdfs:range xsd:dateTime .
+<http://irkb.com/ir-ontology#hasCoaCreationDateTime> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
+                                                     rdfs:range xsd:dateTime .
+
 
 ###  http://irkb.com/ir-ontology#hasCoaDescription
-<http://irkb.com/ir-ontology#hasCoaDescription> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has COA description"@en ;
-    rdfs:comment "The narrative description of a course of action."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasCoaDescription> rdf:type owl:DatatypeProperty ;
+                                                rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
+                                                rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasCoaNotes
-<http://irkb.com/ir-ontology#hasCoaNotes> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has COA notes"@en ;
-    rdfs:comment "Additional notes about a course of action."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasCoaNotes> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
+                                          rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasCoaStatus
-<http://irkb.com/ir-ontology#hasCoaStatus> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has COA status"@en ;
-    rdfs:comment "The current status of a course of action (e.g., pending, executed)."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasCoaStatus> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://irkb.com/ir-ontology#CourseOfAction> ;
+                                           rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasConfirmationDateTime
-<http://irkb.com/ir-ontology#hasConfirmationDateTime> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has confirmation datetime"@en ;
-    rdfs:comment "The timestamp when an incident was confirmed."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range xsd:dateTime .
+<http://irkb.com/ir-ontology#hasConfirmationDateTime> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                                      rdfs:range xsd:dateTime .
+
 
 ###  http://irkb.com/ir-ontology#hasDomain
-<http://irkb.com/ir-ontology#hasDomain> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has domain"@en ;
-    rdfs:comment "The domain associated with an application."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Application> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasDomain> rdf:type owl:DatatypeProperty ;
+                                        rdfs:domain <http://irkb.com/ir-ontology#Application> ;
+                                        rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasEmailAddress
-<http://irkb.com/ir-ontology#hasEmailAddress> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has email address"@en ;
-    rdfs:comment "The email address associated with an email asset."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Email> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasEmailAddress> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://irkb.com/ir-ontology#Email> ;
+                                              rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasEndDateTime
-<http://irkb.com/ir-ontology#hasEndDateTime> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has end datetime"@en ;
-    rdfs:comment "The timestamp when incident response concluded."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range xsd:dateTime .
+<http://irkb.com/ir-ontology#hasEndDateTime> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                             rdfs:range xsd:dateTime .
+
 
 ###  http://irkb.com/ir-ontology#hasEventActivity
-<http://irkb.com/ir-ontology#hasEventActivity> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has event activity"@en ;
-    rdfs:comment "Description of the activity that occurred in a security event."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityEvent> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasEventActivity> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <http://irkb.com/ir-ontology#SecurityEvent> ;
+                                               rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasEventActivityDateTime
-<http://irkb.com/ir-ontology#hasEventActivityDateTime> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has event activity datetime"@en ;
-    rdfs:comment "The timestamp when a security event occurred."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityEvent> ;
-    rdfs:range xsd:dateTime .
+<http://irkb.com/ir-ontology#hasEventActivityDateTime> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <http://irkb.com/ir-ontology#SecurityEvent> ;
+                                                       rdfs:range xsd:dateTime .
+
 
 ###  http://irkb.com/ir-ontology#hasEventDescription
-<http://irkb.com/ir-ontology#hasEventDescription> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has event description"@en ;
-    rdfs:comment "Detailed description of a security event."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityEvent> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasEventDescription> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://irkb.com/ir-ontology#SecurityEvent> ;
+                                                  rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasEventId
-<http://irkb.com/ir-ontology#hasEventId> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has event ID"@en ;
-    rdfs:comment "Unique identifier for a security event."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityEvent> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasEventId> rdf:type owl:DatatypeProperty ;
+                                         rdfs:domain <http://irkb.com/ir-ontology#SecurityEvent> ;
+                                         rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasHostname
-<http://irkb.com/ir-ontology#hasHostname> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has hostname"@en ;
-    rdfs:comment "The hostname of a server asset."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Server> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasHostname> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://irkb.com/ir-ontology#Server> ;
+                                          rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasIncidentDescription
-<http://irkb.com/ir-ontology#hasIncidentDescription> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has incident description"@en ;
-    rdfs:comment "Detailed description of an incident."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasIncidentDescription> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                                     rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasIncidentId
-<http://irkb.com/ir-ontology#hasIncidentId> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has incident ID"@en ;
-    rdfs:comment "Unique identifier for an incident."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasIncidentId> rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                            rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasIncidentName
-<http://irkb.com/ir-ontology#hasIncidentName> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has incident name"@en ;
-    rdfs:comment "Human-readable name for an incident."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasIncidentName> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                              rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasIncidentSeverity
-<http://irkb.com/ir-ontology#hasIncidentSeverity> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has incident severity"@en ;
-    rdfs:comment "The severity level of an incident (e.g., low, medium, high)."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasIncidentSeverity> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                                  rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasIncidentType
-<http://irkb.com/ir-ontology#hasIncidentType> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has incident type"@en ;
-    rdfs:comment "Classification of the incident (e.g., malware, phishing)."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasIncidentType> rdf:type owl:DatatypeProperty ;
+                                              rdfs:domain <http://irkb.com/ir-ontology#Incident> ;
+                                              rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasIpAddress
-<http://irkb.com/ir-ontology#hasIpAddress> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has IP address"@en ;
-    rdfs:comment "The IP address of a server asset."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Server> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasIpAddress> rdf:type owl:DatatypeProperty ;
+                                           rdfs:domain <http://irkb.com/ir-ontology#Server> ;
+                                           rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue
-<http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has security analysis data value"@en ;
-    rdfs:comment "The data value resulting from security analysis."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ;
+                                                           rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime
-<http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has security analysis datetime"@en ;
-    rdfs:comment "The timestamp when security analysis was performed."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ;
-    rdfs:range xsd:dateTime .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ;
+                                                          rdfs:range xsd:dateTime .
+
 
 ###  http://irkb.com/ir-ontology#hasSecurityAnalysisDetails
-<http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has security analysis details"@en ;
-    rdfs:comment "Detailed findings from security analysis."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ;
+                                                         rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasSecurityAnalysisType
-<http://irkb.com/ir-ontology#hasSecurityAnalysisType> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has security analysis type"@en ;
-    rdfs:comment "The type of analysis performed (e.g., forensic, network)."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisType> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <http://irkb.com/ir-ontology#SecurityAnalysis> ;
+                                                      rdfs:range xsd:string .
+
 
 ###  http://irkb.com/ir-ontology#hasUrl
-<http://irkb.com/ir-ontology#hasUrl> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has URL"@en ;
-    rdfs:comment "The URL associated with an application."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Application> ;
-    rdfs:range xsd:anyURI .
+<http://irkb.com/ir-ontology#hasUrl> rdf:type owl:DatatypeProperty ;
+                                     rdfs:domain <http://irkb.com/ir-ontology#Application> ;
+                                     rdfs:range xsd:anyURI .
+
 
 ###  http://irkb.com/ir-ontology#hasUsername
-<http://irkb.com/ir-ontology#hasUsername> 
-    rdf:type owl:DatatypeProperty ;
-    rdfs:label "has username"@en ;
-    rdfs:comment "The username associated with an application."@en ;
-    rdfs:domain <http://irkb.com/ir-ontology#Application> ;
-    rdfs:range xsd:string .
+<http://irkb.com/ir-ontology#hasUsername> rdf:type owl:DatatypeProperty ;
+                                          rdfs:domain <http://irkb.com/ir-ontology#Application> ;
+                                          rdfs:range xsd:string .
+
 
 #################################################################
 #    Classes
 #################################################################
 
 ###  http://irkb.com/ir-ontology#Analyst
-<http://irkb.com/ir-ontology#Analyst> 
-    rdf:type owl:Class ;
-    rdfs:label "Analyst"@en ;
-    rdfs:comment "A security analyst who investigates and responds to incidents."@en ;
-    rdfs:subClassOf owl:Thing .
+<http://irkb.com/ir-ontology#Analyst> rdf:type owl:Class ;
+                                      rdfs:subClassOf owl:Thing .
+
 
 ###  http://irkb.com/ir-ontology#Application
-<http://irkb.com/ir-ontology#Application> 
-    rdf:type owl:Class ;
-    rdfs:label "Application"@en ;
-    rdfs:comment "A software application that may be involved in security incidents."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#Asset> .
+<http://irkb.com/ir-ontology#Application> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://irkb.com/ir-ontology#Asset> .
+
 
 ###  http://irkb.com/ir-ontology#Asset
-<http://irkb.com/ir-ontology#Asset> 
-    rdf:type owl:Class ;
-    rdfs:label "Asset"@en ;
-    rdfs:comment "Any valuable system, device, or data that needs protection."@en ;
-    rdfs:subClassOf owl:Thing .
+<http://irkb.com/ir-ontology#Asset> rdf:type owl:Class ;
+                                    rdfs:subClassOf owl:Thing .
+
 
 ###  http://irkb.com/ir-ontology#Containment
-<http://irkb.com/ir-ontology#Containment> 
-    rdf:type owl:Class ;
-    rdfs:label "Containment"@en ;
-    rdfs:comment "A course of action focused on containing the impact of an incident."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#Containment> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://irkb.com/ir-ontology#CourseOfAction> .
+
 
 ###  http://irkb.com/ir-ontology#CourseOfAction
-<http://irkb.com/ir-ontology#CourseOfAction> 
-    rdf:type owl:Class ;
-    rdfs:label "Course of Action"@en ;
-    rdfs:comment "A planned response to a security incident."@en ;
-    rdfs:subClassOf owl:Thing .
+<http://irkb.com/ir-ontology#CourseOfAction> rdf:type owl:Class ;
+                                             rdfs:subClassOf owl:Thing .
+
 
 ###  http://irkb.com/ir-ontology#DetectionAndAnalysis
-<http://irkb.com/ir-ontology#DetectionAndAnalysis> 
-    rdf:type owl:Class ;
-    rdfs:label "Detection and Analysis"@en ;
-    rdfs:comment "Activities related to detecting and analyzing security incidents."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#DetectionAndAnalysis> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://irkb.com/ir-ontology#CourseOfAction> .
+
 
 ###  http://irkb.com/ir-ontology#Email
-<http://irkb.com/ir-ontology#Email> 
-    rdf:type owl:Class ;
-    rdfs:label "Email"@en ;
-    rdfs:comment "An email account or message that may be involved in security incidents."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#Asset> .
+<http://irkb.com/ir-ontology#Email> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://irkb.com/ir-ontology#Asset> .
+
 
 ###  http://irkb.com/ir-ontology#Eradication
-<http://irkb.com/ir-ontology#Eradication> 
-    rdf:type owl:Class ;
-    rdfs:label "Eradication"@en ;
-    rdfs:comment "A course of action focused on removing threats from systems."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#Eradication> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://irkb.com/ir-ontology#CourseOfAction> .
+
 
 ###  http://irkb.com/ir-ontology#Incident
-<http://irkb.com/ir-ontology#Incident> 
-    rdf:type owl:Class ;
-    rdfs:label "Incident"@en ;
-    rdfs:comment "A security incident that requires investigation and response."@en ;
-    rdfs:subClassOf owl:Thing .
+<http://irkb.com/ir-ontology#Incident> rdf:type owl:Class ;
+                                       rdfs:subClassOf owl:Thing .
+
 
 ###  http://irkb.com/ir-ontology#PostIncidentActivity
-<http://irkb.com/ir-ontology#PostIncidentActivity> 
-    rdf:type owl:Class ;
-    rdfs:label "Post-Incident Activity"@en ;
-    rdfs:comment "Activities conducted after incident resolution to improve future response."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#PostIncidentActivity> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://irkb.com/ir-ontology#CourseOfAction> .
+
 
 ###  http://irkb.com/ir-ontology#Recovery
-<http://irkb.com/ir-ontology#Recovery> 
-    rdf:type owl:Class ;
-    rdfs:label "Recovery"@en ;
-    rdfs:comment "A course of action focused on restoring systems to normal operation."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#Recovery> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://irkb.com/ir-ontology#CourseOfAction> .
+
 
 ###  http://irkb.com/ir-ontology#ResponderCommunication
-<http://irkb.com/ir-ontology#ResponderCommunication> 
-    rdf:type owl:Class ;
-    rdfs:label "Responder Communication"@en ;
-    rdfs:comment "Communication between incident responders during an investigation."@en ;
-    rdfs:subClassOf owl:Thing .
+<http://irkb.com/ir-ontology#ResponderCommunication> rdf:type owl:Class ;
+                                                     rdfs:subClassOf owl:Thing .
+
 
 ###  http://irkb.com/ir-ontology#SecurityAnalysis
-<http://irkb.com/ir-ontology#SecurityAnalysis> 
-    rdf:type owl:Class ;
-    rdfs:label "Security Analysis"@en ;
-    rdfs:comment "The examination of security events to understand incidents."@en ;
-    rdfs:subClassOf owl:Thing .
+<http://irkb.com/ir-ontology#SecurityAnalysis> rdf:type owl:Class ;
+                                               rdfs:subClassOf owl:Thing .
+
 
 ###  http://irkb.com/ir-ontology#SecurityEvent
-<http://irkb.com/ir-ontology#SecurityEvent> 
-    rdf:type owl:Class ;
-    rdfs:label "Security Event"@en ;
-    rdfs:comment "An observable occurrence relevant to security of systems."@en ;
-    rdfs:subClassOf owl:Thing .
+<http://irkb.com/ir-ontology#SecurityEvent> rdf:type owl:Class ;
+                                            rdfs:subClassOf owl:Thing .
+
 
 ###  http://irkb.com/ir-ontology#Server
-<http://irkb.com/ir-ontology#Server> 
-    rdf:type owl:Class ;
-    rdfs:label "Server"@en ;
-    rdfs:comment "A server system that may be involved in security incidents."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#Asset> .
+<http://irkb.com/ir-ontology#Server> rdf:type owl:Class ;
+                                     rdfs:subClassOf <http://irkb.com/ir-ontology#Asset> .
+
 
 ###  http://irkb.com/ir-ontology#Tier1
-<http://irkb.com/ir-ontology#Tier1> 
-    rdf:type owl:Class ;
-    rdfs:label "Tier 1 Analyst"@en ;
-    rdfs:comment "First-level security analyst who performs initial triage."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#Tier1> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://irkb.com/ir-ontology#Analyst> .
+
 
 ###  http://irkb.com/ir-ontology#Tier2
-<http://irkb.com/ir-ontology#Tier2> 
-    rdf:type owl:Class ;
-    rdfs:label "Tier 2 Analyst"@en ;
-    rdfs:comment "Mid-level security analyst who performs deeper investigation."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#Tier2> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://irkb.com/ir-ontology#Analyst> .
+
 
 ###  http://irkb.com/ir-ontology#Tier3
-<http://irkb.com/ir-ontology#Tier3> 
-    rdf:type owl:Class ;
-    rdfs:label "Tier 3 Analyst"@en ;
-    rdfs:comment "Senior security analyst who handles complex investigations."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#Tier3> rdf:type owl:Class ;
+                                    rdfs:subClassOf <http://irkb.com/ir-ontology#Analyst> .
+
 
 ###  http://irkb.com/ir-ontology#Workstation
-<http://irkb.com/ir-ontology#Workstation> 
-    rdf:type owl:Class ;
-    rdfs:label "Workstation"@en ;
-    rdfs:comment "An end-user computing device that may be involved in security incidents."@en ;
-    rdfs:subClassOf <http://irkb.com/ir-ontology#Asset> .
+<http://irkb.com/ir-ontology#Workstation> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://irkb.com/ir-ontology#Asset> .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
