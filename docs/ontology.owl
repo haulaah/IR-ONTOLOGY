@@ -1,12 +1,86 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.w3.org/2002/07/owl"
+<rdf:RDF xmlns="http://irkb.com/ir-ontology#"
+     xml:base="http://irkb.com/ir-ontology"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <Ontology/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://irkb.com/ir-ontology">
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-06-01</terms:created>
+        <terms:creator>IRKB Team</terms:creator>
+        <terms:description xml:lang="en">An ontology for modeling cybersecurity incident response processes and communication.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">Incident Response Process Ontology</terms:title>
+        <rdfs:label xml:lang="en">Incident Response Ontology</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
 
 
@@ -25,112 +99,134 @@
     <!-- http://irkb.com/ir-ontology#hasAffectedAsset -->
 
 
-    <ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasAffectedAsset">
+    <owl:ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasAffectedAsset">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#Asset"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Links an incident to the asset that was impacted during the security event.</rdfs:comment>
+        <rdfs:label xml:lang="en">has affected asset</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasAnalyst -->
 
 
-    <ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasAnalyst">
+    <owl:ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasAnalyst">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#ResponderCommunication"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#Analyst"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Associates a responder communication with the analyst involved.</rdfs:comment>
+        <rdfs:label xml:lang="en">has analyst</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasCoa -->
 
 
-    <ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasCoa">
+    <owl:ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasCoa">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Links an incident to the course of action taken to address it.</rdfs:comment>
+        <rdfs:label xml:lang="en">has course of action</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasCoaCreationAnalyst -->
 
 
-    <ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasCoaCreationAnalyst">
+    <owl:ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasCoaCreationAnalyst">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#Analyst"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Indicates which analyst created the course of action.</rdfs:comment>
+        <rdfs:label xml:lang="en">has COA creation analyst</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasConfirmationAnalyst -->
 
 
-    <ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasConfirmationAnalyst">
+    <owl:ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasConfirmationAnalyst">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#Analyst"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Links an incident to the analyst who confirmed its validity.</rdfs:comment>
+        <rdfs:label xml:lang="en">has confirmation analyst</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasEvent -->
 
 
-    <ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasEvent">
+    <owl:ObjectProperty rdf:about="http://irkb.com/ir-ontology#hasEvent">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Connects an incident to the security events that compose it.</rdfs:comment>
+        <rdfs:label xml:lang="en">has security event</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/ns/prov#generated -->
 
 
-    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#generated">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#SecurityAnalysis"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Indicates that a security analysis was generated from a security event.</rdfs:comment>
+        <rdfs:label xml:lang="en">generated</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/ns/prov#used -->
 
 
-    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#used">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#SecurityAnalysis"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Shows that a course of action utilized a specific security analysis.</rdfs:comment>
+        <rdfs:label xml:lang="en">used</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/ns/prov#wasAssociatedWith -->
 
 
-    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasAssociatedWith">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Asset"/>
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#ResponderCommunication"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#Incident"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Indicates that an asset or communication was associated with an incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">was associated with</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/ns/prov#wasGeneratedBy -->
 
 
-    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasGeneratedBy">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityAnalysis"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Indicates that a security analysis was generated by a security event.</rdfs:comment>
+        <rdfs:label xml:lang="en">was generated by</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.w3.org/ns/prov#wasPerformedBy -->
 
 
-    <ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasPerformedBy">
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasPerformedBy">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityAnalysis"/>
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
         <rdfs:range rdf:resource="http://irkb.com/ir-ontology#Analyst"/>
-    </ObjectProperty>
+        <rdfs:comment xml:lang="en">Shows that a security event or analysis was performed by a specific analyst.</rdfs:comment>
+        <rdfs:label xml:lang="en">was performed by</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -149,300 +245,360 @@
     <!-- http://irkb.com/ir-ontology#hasAnalystEmail -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasAnalystEmail">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasAnalystEmail">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Analyst"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The email address of an analyst.</rdfs:comment>
+        <rdfs:label xml:lang="en">has analyst email</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasAnalystId -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasAnalystId">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasAnalystId">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Analyst"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The unique identifier for an analyst.</rdfs:comment>
+        <rdfs:label xml:lang="en">has analyst ID</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasChatMessage -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasChatMessage">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasChatMessage">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#ResponderCommunication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The content of a communication between responders.</rdfs:comment>
+        <rdfs:label xml:lang="en">has chat message</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasChatMessageDateTime -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasChatMessageDateTime">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasChatMessageDateTime">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#ResponderCommunication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The timestamp when a communication occurred.</rdfs:comment>
+        <rdfs:label xml:lang="en">has chat message datetime</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasChatSentiment -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasChatSentiment">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasChatSentiment">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#ResponderCommunication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The sentiment analysis result of a communication.</rdfs:comment>
+        <rdfs:label xml:lang="en">has chat sentiment</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasCoaCreationDateTime -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasCoaCreationDateTime">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasCoaCreationDateTime">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The timestamp when a course of action was created.</rdfs:comment>
+        <rdfs:label xml:lang="en">has COA creation datetime</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasCoaDescription -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasCoaDescription">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasCoaDescription">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The narrative description of a course of action.</rdfs:comment>
+        <rdfs:label xml:lang="en">has COA description</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasCoaNotes -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasCoaNotes">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasCoaNotes">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">Additional notes about a course of action.</rdfs:comment>
+        <rdfs:label xml:lang="en">has COA notes</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasCoaStatus -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasCoaStatus">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasCoaStatus">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The current status of a course of action (e.g., pending, executed).</rdfs:comment>
+        <rdfs:label xml:lang="en">has COA status</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasConfirmationDateTime -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasConfirmationDateTime">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasConfirmationDateTime">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The timestamp when an incident was confirmed.</rdfs:comment>
+        <rdfs:label xml:lang="en">has confirmation datetime</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasDomain -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasDomain">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasDomain">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Application"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The domain associated with an application.</rdfs:comment>
+        <rdfs:label xml:lang="en">has domain</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasEmailAddress -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEmailAddress">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEmailAddress">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Email"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The email address associated with an email asset.</rdfs:comment>
+        <rdfs:label xml:lang="en">has email address</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasEndDateTime -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEndDateTime">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEndDateTime">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The timestamp when incident response concluded.</rdfs:comment>
+        <rdfs:label xml:lang="en">has end datetime</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasEventActivity -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventActivity">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventActivity">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">Description of the activity that occurred in a security event.</rdfs:comment>
+        <rdfs:label xml:lang="en">has event activity</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasEventActivityDateTime -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventActivityDateTime">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventActivityDateTime">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The timestamp when a security event occurred.</rdfs:comment>
+        <rdfs:label xml:lang="en">has event activity datetime</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasEventDescription -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventDescription">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventDescription">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">Detailed description of a security event.</rdfs:comment>
+        <rdfs:label xml:lang="en">has event description</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasEventId -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventId">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventId">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">Unique identifier for a security event.</rdfs:comment>
+        <rdfs:label xml:lang="en">has event ID</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasHostname -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasHostname">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasHostname">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Server"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The hostname of a server asset.</rdfs:comment>
+        <rdfs:label xml:lang="en">has hostname</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasIncidentDescription -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIncidentDescription">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIncidentDescription">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">Detailed description of an incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">has incident description</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasIncidentId -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIncidentId">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIncidentId">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">Unique identifier for an incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">has incident ID</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasIncidentName -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIncidentName">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIncidentName">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">Human-readable name for an incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">has incident name</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasIncidentSeverity -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIncidentSeverity">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIncidentSeverity">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The severity level of an incident (e.g., low, medium, high).</rdfs:comment>
+        <rdfs:label xml:lang="en">has incident severity</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasIncidentType -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIncidentType">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIncidentType">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Incident"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">Classification of the incident (e.g., malware, phishing).</rdfs:comment>
+        <rdfs:label xml:lang="en">has incident type</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasIpAddress -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIpAddress">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasIpAddress">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Server"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The IP address of a server asset.</rdfs:comment>
+        <rdfs:label xml:lang="en">has IP address</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityAnalysis"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The data value resulting from security analysis.</rdfs:comment>
+        <rdfs:label xml:lang="en">has security analysis data value</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityAnalysis"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The timestamp when security analysis was performed.</rdfs:comment>
+        <rdfs:label xml:lang="en">has security analysis datetime</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasSecurityAnalysisDetails -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasSecurityAnalysisDetails">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasSecurityAnalysisDetails">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityAnalysis"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">Detailed findings from security analysis.</rdfs:comment>
+        <rdfs:label xml:lang="en">has security analysis details</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasSecurityAnalysisType -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasSecurityAnalysisType">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasSecurityAnalysisType">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityAnalysis"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The type of analysis performed (e.g., forensic, network).</rdfs:comment>
+        <rdfs:label xml:lang="en">has security analysis type</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasUrl -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasUrl">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasUrl">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Application"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The URL associated with an application.</rdfs:comment>
+        <rdfs:label xml:lang="en">has URL</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://irkb.com/ir-ontology#hasUsername -->
 
 
-    <DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasUsername">
+    <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasUsername">
         <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#Application"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </DatatypeProperty>
+        <rdfs:comment xml:lang="en">The username associated with an application.</rdfs:comment>
+        <rdfs:label xml:lang="en">has username</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -461,171 +617,209 @@
     <!-- http://irkb.com/ir-ontology#Analyst -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Analyst">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Analyst">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Class>
+        <rdfs:comment xml:lang="en">A security analyst who investigates and responds to incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Analyst</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Application -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Application">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Application">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#Asset"/>
-    </Class>
+        <rdfs:comment xml:lang="en">A software application that may be involved in security incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Application</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Asset -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Asset">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Asset">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Class>
+        <rdfs:comment xml:lang="en">Any valuable system, device, or data that needs protection.</rdfs:comment>
+        <rdfs:label xml:lang="en">Asset</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Containment -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Containment">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Containment">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
-    </Class>
+        <rdfs:comment xml:lang="en">A course of action focused on containing the impact of an incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">Containment</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#CourseOfAction -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#CourseOfAction">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#CourseOfAction">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Class>
+        <rdfs:comment xml:lang="en">A planned response to a security incident.</rdfs:comment>
+        <rdfs:label xml:lang="en">Course of Action</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#DetectionAndAnalysis -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#DetectionAndAnalysis">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#DetectionAndAnalysis">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
-    </Class>
+        <rdfs:comment xml:lang="en">Activities related to detecting and analyzing security incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Detection and Analysis</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Email -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Email">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Email">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#Asset"/>
-    </Class>
+        <rdfs:comment xml:lang="en">An email account or message that may be involved in security incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Email</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Eradication -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Eradication">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Eradication">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
-    </Class>
+        <rdfs:comment xml:lang="en">A course of action focused on removing threats from systems.</rdfs:comment>
+        <rdfs:label xml:lang="en">Eradication</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Incident -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Incident">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Incident">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Class>
+        <rdfs:comment xml:lang="en">A security incident that requires investigation and response.</rdfs:comment>
+        <rdfs:label xml:lang="en">Incident</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#PostIncidentActivity -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#PostIncidentActivity">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#PostIncidentActivity">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
-    </Class>
+        <rdfs:comment xml:lang="en">Activities conducted after incident resolution to improve future response.</rdfs:comment>
+        <rdfs:label xml:lang="en">Post-Incident Activity</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Recovery -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Recovery">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Recovery">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
-    </Class>
+        <rdfs:comment xml:lang="en">A course of action focused on restoring systems to normal operation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recovery</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#ResponderCommunication -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#ResponderCommunication">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#ResponderCommunication">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Class>
+        <rdfs:comment xml:lang="en">Communication between incident responders during an investigation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Responder Communication</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#SecurityAnalysis -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#SecurityAnalysis">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#SecurityAnalysis">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Class>
+        <rdfs:comment xml:lang="en">The examination of security events to understand incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Security Analysis</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#SecurityEvent -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#SecurityEvent">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#SecurityEvent">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </Class>
+        <rdfs:comment xml:lang="en">An observable occurrence relevant to security of systems.</rdfs:comment>
+        <rdfs:label xml:lang="en">Security Event</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Server -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Server">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Server">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#Asset"/>
-    </Class>
+        <rdfs:comment xml:lang="en">A server system that may be involved in security incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Server</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Tier1 -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Tier1">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Tier1">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#Analyst"/>
-    </Class>
+        <rdfs:comment xml:lang="en">First-level security analyst who performs initial triage.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tier 1 Analyst</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Tier2 -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Tier2">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Tier2">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#Analyst"/>
-    </Class>
+        <rdfs:comment xml:lang="en">Mid-level (Incident Responder) security analyst who performs deeper investigation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tier 2 Analyst</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Tier3 -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Tier3">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Tier3">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#Analyst"/>
-    </Class>
+        <rdfs:comment xml:lang="en">Senior security analyst who handles complex investigations.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tier 3 Analyst</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://irkb.com/ir-ontology#Workstation -->
 
 
-    <Class rdf:about="http://irkb.com/ir-ontology#Workstation">
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Workstation">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#Asset"/>
-    </Class>
+        <rdfs:comment xml:lang="en">An end-user computing device that may be involved in security incidents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Workstation</rdfs:label>
+    </owl:Class>
 </rdf:RDF>
 
 

@@ -1,4 +1,46 @@
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://irkb.com/ir-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://irkb.com/ir-ontology> <http://purl.org/dc/terms/created> "2025-06-01"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://irkb.com/ir-ontology> <http://purl.org/dc/terms/creator> "IRKB Team" .
+<http://irkb.com/ir-ontology> <http://purl.org/dc/terms/description> "An ontology for modeling cybersecurity incident response processes and communication."@en .
+<http://irkb.com/ir-ontology> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://irkb.com/ir-ontology> <http://purl.org/dc/terms/title> "Incident Response Process Ontology"@en .
+<http://irkb.com/ir-ontology> <http://www.w3.org/2000/01/rdf-schema#label> "Incident Response Ontology"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
 # 
 # 
 # #################################################################
@@ -12,58 +54,80 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://irkb.com/ir-ontology#hasAffectedAsset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://irkb.com/ir-ontology#hasAffectedAsset> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasAffectedAsset> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Asset> .
+<http://irkb.com/ir-ontology#hasAffectedAsset> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the asset that was impacted during the security event."@en .
+<http://irkb.com/ir-ontology#hasAffectedAsset> <http://www.w3.org/2000/01/rdf-schema#label> "has affected asset"@en .
 # 
 # http://irkb.com/ir-ontology#hasAnalyst
 <http://irkb.com/ir-ontology#hasAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://irkb.com/ir-ontology#hasAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
 <http://irkb.com/ir-ontology#hasAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#hasAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Associates a responder communication with the analyst involved."@en .
+<http://irkb.com/ir-ontology#hasAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has analyst"@en .
 # 
 # http://irkb.com/ir-ontology#hasCoa
 <http://irkb.com/ir-ontology#hasCoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://irkb.com/ir-ontology#hasCoa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasCoa> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#hasCoa> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the course of action taken to address it."@en .
+<http://irkb.com/ir-ontology#hasCoa> <http://www.w3.org/2000/01/rdf-schema#label> "has course of action"@en .
 # 
 # http://irkb.com/ir-ontology#hasCoaCreationAnalyst
 <http://irkb.com/ir-ontology#hasCoaCreationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://irkb.com/ir-ontology#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
 <http://irkb.com/ir-ontology#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates which analyst created the course of action."@en .
+<http://irkb.com/ir-ontology#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has COA creation analyst"@en .
 # 
 # http://irkb.com/ir-ontology#hasConfirmationAnalyst
 <http://irkb.com/ir-ontology#hasConfirmationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://irkb.com/ir-ontology#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to the analyst who confirmed its validity."@en .
+<http://irkb.com/ir-ontology#hasConfirmationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has confirmation analyst"@en .
 # 
 # http://irkb.com/ir-ontology#hasEvent
 <http://irkb.com/ir-ontology#hasEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://irkb.com/ir-ontology#hasEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://irkb.com/ir-ontology#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects an incident to the security events that compose it."@en .
+<http://irkb.com/ir-ontology#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "has security event"@en .
 # 
 # http://www.w3.org/ns/prov#generated
 <http://www.w3.org/ns/prov#generated> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#generated> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
 <http://www.w3.org/ns/prov#generated> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#SecurityAnalysis> .
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a security analysis was generated from a security event."@en .
+<http://www.w3.org/ns/prov#generated> <http://www.w3.org/2000/01/rdf-schema#label> "generated"@en .
 # 
 # http://www.w3.org/ns/prov#used
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
 <http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#SecurityAnalysis> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#comment> "Shows that a course of action utilized a specific security analysis."@en .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#label> "used"@en .
 # 
 # http://www.w3.org/ns/prov#wasAssociatedWith
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Asset> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
 <http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Incident> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that an asset or communication was associated with an incident."@en .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "was associated with"@en .
 # 
 # http://www.w3.org/ns/prov#wasGeneratedBy
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
 <http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a security analysis was generated by a security event."@en .
+<http://www.w3.org/ns/prov#wasGeneratedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was generated by"@en .
 # 
 # http://www.w3.org/ns/prov#wasPerformedBy
 <http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
 <http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
 <http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
+<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Shows that a security event or analysis was performed by a specific analyst."@en .
+<http://www.w3.org/ns/prov#wasPerformedBy> <http://www.w3.org/2000/01/rdf-schema#label> "was performed by"@en .
 # 
 # 
 # 
@@ -78,151 +142,211 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://irkb.com/ir-ontology#hasAnalystEmail> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Analyst> .
 <http://irkb.com/ir-ontology#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#comment> "The email address of an analyst."@en .
+<http://irkb.com/ir-ontology#hasAnalystEmail> <http://www.w3.org/2000/01/rdf-schema#label> "has analyst email"@en .
 # 
 # http://irkb.com/ir-ontology#hasAnalystId
 <http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Analyst> .
 <http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#comment> "The unique identifier for an analyst."@en .
+<http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#label> "has analyst ID"@en .
 # 
 # http://irkb.com/ir-ontology#hasChatMessage
 <http://irkb.com/ir-ontology#hasChatMessage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
 <http://irkb.com/ir-ontology#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#comment> "The content of a communication between responders."@en .
+<http://irkb.com/ir-ontology#hasChatMessage> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message"@en .
 # 
 # http://irkb.com/ir-ontology#hasChatMessageDateTime
 <http://irkb.com/ir-ontology#hasChatMessageDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
 <http://irkb.com/ir-ontology#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://irkb.com/ir-ontology#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The timestamp when a communication occurred."@en .
+<http://irkb.com/ir-ontology#hasChatMessageDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has chat message datetime"@en .
 # 
 # http://irkb.com/ir-ontology#hasChatSentiment
 <http://irkb.com/ir-ontology#hasChatSentiment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
 <http://irkb.com/ir-ontology#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#comment> "The sentiment analysis result of a communication."@en .
+<http://irkb.com/ir-ontology#hasChatSentiment> <http://www.w3.org/2000/01/rdf-schema#label> "has chat sentiment"@en .
 # 
 # http://irkb.com/ir-ontology#hasCoaCreationDateTime
 <http://irkb.com/ir-ontology#hasCoaCreationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
 <http://irkb.com/ir-ontology#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://irkb.com/ir-ontology#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The timestamp when a course of action was created."@en .
+<http://irkb.com/ir-ontology#hasCoaCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has COA creation datetime"@en .
 # 
 # http://irkb.com/ir-ontology#hasCoaDescription
 <http://irkb.com/ir-ontology#hasCoaDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
 <http://irkb.com/ir-ontology#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "The narrative description of a course of action."@en .
+<http://irkb.com/ir-ontology#hasCoaDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has COA description"@en .
 # 
 # http://irkb.com/ir-ontology#hasCoaNotes
 <http://irkb.com/ir-ontology#hasCoaNotes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasCoaNotes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
 <http://irkb.com/ir-ontology#hasCoaNotes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasCoaNotes> <http://www.w3.org/2000/01/rdf-schema#comment> "Additional notes about a course of action."@en .
+<http://irkb.com/ir-ontology#hasCoaNotes> <http://www.w3.org/2000/01/rdf-schema#label> "has COA notes"@en .
 # 
 # http://irkb.com/ir-ontology#hasCoaStatus
 <http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
 <http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "The current status of a course of action (e.g., pending, executed)."@en .
+<http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has COA status"@en .
 # 
 # http://irkb.com/ir-ontology#hasConfirmationDateTime
 <http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The timestamp when an incident was confirmed."@en .
+<http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has confirmation datetime"@en .
 # 
 # http://irkb.com/ir-ontology#hasDomain
 <http://irkb.com/ir-ontology#hasDomain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasDomain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Application> .
 <http://irkb.com/ir-ontology#hasDomain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasDomain> <http://www.w3.org/2000/01/rdf-schema#comment> "The domain associated with an application."@en .
+<http://irkb.com/ir-ontology#hasDomain> <http://www.w3.org/2000/01/rdf-schema#label> "has domain"@en .
 # 
 # http://irkb.com/ir-ontology#hasEmailAddress
 <http://irkb.com/ir-ontology#hasEmailAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasEmailAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Email> .
 <http://irkb.com/ir-ontology#hasEmailAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasEmailAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The email address associated with an email asset."@en .
+<http://irkb.com/ir-ontology#hasEmailAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has email address"@en .
 # 
 # http://irkb.com/ir-ontology#hasEndDateTime
 <http://irkb.com/ir-ontology#hasEndDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://irkb.com/ir-ontology#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The timestamp when incident response concluded."@en .
+<http://irkb.com/ir-ontology#hasEndDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has end datetime"@en .
 # 
 # http://irkb.com/ir-ontology#hasEventActivity
 <http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
 <http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the activity that occurred in a security event."@en .
+<http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#label> "has event activity"@en .
 # 
 # http://irkb.com/ir-ontology#hasEventActivityDateTime
 <http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
 <http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The timestamp when a security event occurred."@en .
+<http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has event activity datetime"@en .
 # 
 # http://irkb.com/ir-ontology#hasEventDescription
 <http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
 <http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of a security event."@en .
+<http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has event description"@en .
 # 
 # http://irkb.com/ir-ontology#hasEventId
 <http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
 <http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for a security event."@en .
+<http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#label> "has event ID"@en .
 # 
 # http://irkb.com/ir-ontology#hasHostname
 <http://irkb.com/ir-ontology#hasHostname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasHostname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Server> .
 <http://irkb.com/ir-ontology#hasHostname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasHostname> <http://www.w3.org/2000/01/rdf-schema#comment> "The hostname of a server asset."@en .
+<http://irkb.com/ir-ontology#hasHostname> <http://www.w3.org/2000/01/rdf-schema#label> "has hostname"@en .
 # 
 # http://irkb.com/ir-ontology#hasIncidentDescription
 <http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of an incident."@en .
+<http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has incident description"@en .
 # 
 # http://irkb.com/ir-ontology#hasIncidentId
 <http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for an incident."@en .
+<http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#label> "has incident ID"@en .
 # 
 # http://irkb.com/ir-ontology#hasIncidentName
 <http://irkb.com/ir-ontology#hasIncidentName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#comment> "Human-readable name for an incident."@en .
+<http://irkb.com/ir-ontology#hasIncidentName> <http://www.w3.org/2000/01/rdf-schema#label> "has incident name"@en .
 # 
 # http://irkb.com/ir-ontology#hasIncidentSeverity
 <http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity level of an incident (e.g., low, medium, high)."@en .
+<http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#label> "has incident severity"@en .
 # 
 # http://irkb.com/ir-ontology#hasIncidentType
 <http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of the incident (e.g., malware, phishing)."@en .
+<http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#label> "has incident type"@en .
 # 
 # http://irkb.com/ir-ontology#hasIpAddress
 <http://irkb.com/ir-ontology#hasIpAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasIpAddress> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Server> .
 <http://irkb.com/ir-ontology#hasIpAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasIpAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The IP address of a server asset."@en .
+<http://irkb.com/ir-ontology#hasIpAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has IP address"@en .
 # 
 # http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The data value resulting from security analysis."@en .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis data value"@en .
 # 
 # http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The timestamp when security analysis was performed."@en .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis datetime"@en .
 # 
 # http://irkb.com/ir-ontology#hasSecurityAnalysisDetails
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed findings from security analysis."@en .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis details"@en .
 # 
 # http://irkb.com/ir-ontology#hasSecurityAnalysisType
 <http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of analysis performed (e.g., forensic, network)."@en .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis type"@en .
 # 
 # http://irkb.com/ir-ontology#hasUrl
 <http://irkb.com/ir-ontology#hasUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Application> .
 <http://irkb.com/ir-ontology#hasUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://irkb.com/ir-ontology#hasUrl> <http://www.w3.org/2000/01/rdf-schema#comment> "The URL associated with an application."@en .
+<http://irkb.com/ir-ontology#hasUrl> <http://www.w3.org/2000/01/rdf-schema#label> "has URL"@en .
 # 
 # http://irkb.com/ir-ontology#hasUsername
 <http://irkb.com/ir-ontology#hasUsername> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasUsername> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Application> .
 <http://irkb.com/ir-ontology#hasUsername> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://irkb.com/ir-ontology#hasUsername> <http://www.w3.org/2000/01/rdf-schema#comment> "The username associated with an application."@en .
+<http://irkb.com/ir-ontology#hasUsername> <http://www.w3.org/2000/01/rdf-schema#label> "has username"@en .
 # 
 # 
 # 
@@ -236,77 +360,115 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://irkb.com/ir-ontology#Analyst
 <http://irkb.com/ir-ontology#Analyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Analyst> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://irkb.com/ir-ontology#Analyst> <http://www.w3.org/2000/01/rdf-schema#comment> "A security analyst who investigates and responds to incidents."@en .
+<http://irkb.com/ir-ontology#Analyst> <http://www.w3.org/2000/01/rdf-schema#label> "Analyst"@en .
 # 
 # http://irkb.com/ir-ontology#Application
 <http://irkb.com/ir-ontology#Application> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Application> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Asset> .
+<http://irkb.com/ir-ontology#Application> <http://www.w3.org/2000/01/rdf-schema#comment> "A software application that may be involved in security incidents."@en .
+<http://irkb.com/ir-ontology#Application> <http://www.w3.org/2000/01/rdf-schema#label> "Application"@en .
 # 
 # http://irkb.com/ir-ontology#Asset
 <http://irkb.com/ir-ontology#Asset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Asset> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://irkb.com/ir-ontology#Asset> <http://www.w3.org/2000/01/rdf-schema#comment> "Any valuable system, device, or data that needs protection."@en .
+<http://irkb.com/ir-ontology#Asset> <http://www.w3.org/2000/01/rdf-schema#label> "Asset"@en .
 # 
 # http://irkb.com/ir-ontology#Containment
 <http://irkb.com/ir-ontology#Containment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Containment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#Containment> <http://www.w3.org/2000/01/rdf-schema#comment> "A course of action focused on containing the impact of an incident."@en .
+<http://irkb.com/ir-ontology#Containment> <http://www.w3.org/2000/01/rdf-schema#label> "Containment"@en .
 # 
 # http://irkb.com/ir-ontology#CourseOfAction
 <http://irkb.com/ir-ontology#CourseOfAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#CourseOfAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://irkb.com/ir-ontology#CourseOfAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A planned response to a security incident."@en .
+<http://irkb.com/ir-ontology#CourseOfAction> <http://www.w3.org/2000/01/rdf-schema#label> "Course of Action"@en .
 # 
 # http://irkb.com/ir-ontology#DetectionAndAnalysis
 <http://irkb.com/ir-ontology#DetectionAndAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#DetectionAndAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#DetectionAndAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities related to detecting and analyzing security incidents."@en .
+<http://irkb.com/ir-ontology#DetectionAndAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Detection and Analysis"@en .
 # 
 # http://irkb.com/ir-ontology#Email
 <http://irkb.com/ir-ontology#Email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Email> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Asset> .
+<http://irkb.com/ir-ontology#Email> <http://www.w3.org/2000/01/rdf-schema#comment> "An email account or message that may be involved in security incidents."@en .
+<http://irkb.com/ir-ontology#Email> <http://www.w3.org/2000/01/rdf-schema#label> "Email"@en .
 # 
 # http://irkb.com/ir-ontology#Eradication
 <http://irkb.com/ir-ontology#Eradication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Eradication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#Eradication> <http://www.w3.org/2000/01/rdf-schema#comment> "A course of action focused on removing threats from systems."@en .
+<http://irkb.com/ir-ontology#Eradication> <http://www.w3.org/2000/01/rdf-schema#label> "Eradication"@en .
 # 
 # http://irkb.com/ir-ontology#Incident
 <http://irkb.com/ir-ontology#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://irkb.com/ir-ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#comment> "A security incident that requires investigation and response."@en .
+<http://irkb.com/ir-ontology#Incident> <http://www.w3.org/2000/01/rdf-schema#label> "Incident"@en .
 # 
 # http://irkb.com/ir-ontology#PostIncidentActivity
 <http://irkb.com/ir-ontology#PostIncidentActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#PostIncidentActivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#PostIncidentActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities conducted after incident resolution to improve future response."@en .
+<http://irkb.com/ir-ontology#PostIncidentActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Post-Incident Activity"@en .
 # 
 # http://irkb.com/ir-ontology#Recovery
 <http://irkb.com/ir-ontology#Recovery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Recovery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#Recovery> <http://www.w3.org/2000/01/rdf-schema#comment> "A course of action focused on restoring systems to normal operation."@en .
+<http://irkb.com/ir-ontology#Recovery> <http://www.w3.org/2000/01/rdf-schema#label> "Recovery"@en .
 # 
 # http://irkb.com/ir-ontology#ResponderCommunication
 <http://irkb.com/ir-ontology#ResponderCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://irkb.com/ir-ontology#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Communication between incident responders during an investigation."@en .
+<http://irkb.com/ir-ontology#ResponderCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "Responder Communication"@en .
 # 
 # http://irkb.com/ir-ontology#SecurityAnalysis
 <http://irkb.com/ir-ontology#SecurityAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://irkb.com/ir-ontology#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "The examination of security events to understand incidents."@en .
+<http://irkb.com/ir-ontology#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Security Analysis"@en .
 # 
 # http://irkb.com/ir-ontology#SecurityEvent
 <http://irkb.com/ir-ontology#SecurityEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#SecurityEvent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://irkb.com/ir-ontology#SecurityEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable occurrence relevant to security of systems."@en .
+<http://irkb.com/ir-ontology#SecurityEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Security Event"@en .
 # 
 # http://irkb.com/ir-ontology#Server
 <http://irkb.com/ir-ontology#Server> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Server> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Asset> .
+<http://irkb.com/ir-ontology#Server> <http://www.w3.org/2000/01/rdf-schema#comment> "A server system that may be involved in security incidents."@en .
+<http://irkb.com/ir-ontology#Server> <http://www.w3.org/2000/01/rdf-schema#label> "Server"@en .
 # 
 # http://irkb.com/ir-ontology#Tier1
 <http://irkb.com/ir-ontology#Tier1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Tier1> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#Tier1> <http://www.w3.org/2000/01/rdf-schema#comment> "First-level security analyst who performs initial triage."@en .
+<http://irkb.com/ir-ontology#Tier1> <http://www.w3.org/2000/01/rdf-schema#label> "Tier 1 Analyst"@en .
 # 
 # http://irkb.com/ir-ontology#Tier2
 <http://irkb.com/ir-ontology#Tier2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Tier2> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#Tier2> <http://www.w3.org/2000/01/rdf-schema#comment> "Mid-level (Incident Responder) security analyst who performs deeper investigation."@en .
+<http://irkb.com/ir-ontology#Tier2> <http://www.w3.org/2000/01/rdf-schema#label> "Tier 2 Analyst"@en .
 # 
 # http://irkb.com/ir-ontology#Tier3
 <http://irkb.com/ir-ontology#Tier3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Tier3> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#Tier3> <http://www.w3.org/2000/01/rdf-schema#comment> "Senior security analyst who handles complex investigations."@en .
+<http://irkb.com/ir-ontology#Tier3> <http://www.w3.org/2000/01/rdf-schema#label> "Tier 3 Analyst"@en .
 # 
 # http://irkb.com/ir-ontology#Workstation
 <http://irkb.com/ir-ontology#Workstation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Workstation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#Asset> .
+<http://irkb.com/ir-ontology#Workstation> <http://www.w3.org/2000/01/rdf-schema#comment> "An end-user computing device that may be involved in security incidents."@en .
+<http://irkb.com/ir-ontology#Workstation> <http://www.w3.org/2000/01/rdf-schema#label> "Workstation"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
