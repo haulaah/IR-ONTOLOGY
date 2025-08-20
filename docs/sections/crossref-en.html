@@ -4,24 +4,21 @@ This section provides details for each class and property defined by Incident Re
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
   <li><a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a></li>
-  <li><a href="#Application" title="http://irkb.com/ir-ontology#Application">Application</a></li>
-  <li><a href="#Asset" title="http://irkb.com/ir-ontology#Asset">Asset</a></li>
+  <li><a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a></li>
   <li><a href="#Containment" title="http://irkb.com/ir-ontology#Containment">Containment</a></li>
   <li><a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a></li>
-  <li><a href="#DetectionAndAnalysis" title="http://irkb.com/ir-ontology#DetectionAndAnalysis">Detection and Analysis</a></li>
-  <li><a href="#Email" title="http://irkb.com/ir-ontology#Email">Email</a></li>
+  <li><a href="#Detection" title="http://irkb.com/ir-ontology#Detection">Detection and Analysis</a></li>
   <li><a href="#Eradication" title="http://irkb.com/ir-ontology#Eradication">Eradication</a></li>
+  <li><a href="#EventAction" title="http://irkb.com/ir-ontology#EventAction">Event Action</a></li>
   <li><a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a></li>
   <li><a href="#PostIncidentActivity" title="http://irkb.com/ir-ontology#PostIncidentActivity">Post-Incident Activity</a></li>
   <li><a href="#Recovery" title="http://irkb.com/ir-ontology#Recovery">Recovery</a></li>
   <li><a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a></li>
   <li><a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a></li>
   <li><a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a></li>
-  <li><a href="#Server" title="http://irkb.com/ir-ontology#Server">Server</a></li>
-  <li><a href="#Tier1" title="http://irkb.com/ir-ontology#Tier1">Tier 1 Analyst</a></li>
-  <li><a href="#Tier2" title="http://irkb.com/ir-ontology#Tier2">Tier 2 Analyst</a></li>
-  <li><a href="#Tier3" title="http://irkb.com/ir-ontology#Tier3">Tier 3 Analyst</a></li>
-  <li><a href="#Workstation" title="http://irkb.com/ir-ontology#Workstation">Workstation</a></li>
+  <li><a href="#Tier1" title="http://irkb.com/ir-ontology#Tier1">Tier 1</a></li>
+  <li><a href="#Tier2" title="http://irkb.com/ir-ontology#Tier2">Tier 2</a></li>
+  <li><a href="#Tier3" title="http://irkb.com/ir-ontology#Tier3">Tier 3</a></li>
  </ul>
  <div class="entity" id="Analyst">
   <h3>Analyst<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
@@ -31,82 +28,55 @@ This section provides details for each class and property defined by Incident Re
   </div>
   <dl class="description">
    <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
     has sub-classes
    </dt>
    <dd>
-    <a href="#Tier1" title="http://irkb.com/ir-ontology#Tier1">Tier 1 Analyst</a> <sup class="type-c" title="class">c</sup>, <a href="#Tier2" title="http://irkb.com/ir-ontology#Tier2">Tier 2 Analyst</a> <sup class="type-c" title="class">c</sup>, <a href="#Tier3" title="http://irkb.com/ir-ontology#Tier3">Tier 3 Analyst</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Tier1" title="http://irkb.com/ir-ontology#Tier1">Tier 1</a> <sup class="type-c" title="class">c</sup>, <a href="#Tier2" title="http://irkb.com/ir-ontology#Tier2">Tier 2</a> <sup class="type-c" title="class">c</sup>, <a href="#Tier3" title="http://irkb.com/ir-ontology#Tier3">Tier 3</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#hasAnalystId" title="http://irkb.com/ir-ontology#hasAnalystId">has analyst ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAnalystEmail" title="http://irkb.com/ir-ontology#hasAnalystEmail">has analyst email</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#assignedToCoa" title="http://irkb.com/ir-ontology#assignedToCoa">assigned to COA</a> <sup class="type-op" title="object property">op</sup>, <a href="#authoredCommunication" title="http://irkb.com/ir-ontology#authoredCommunication">authored communication</a> <sup class="type-op" title="object property">op</sup>, <a href="#confirmedIncident" title="http://irkb.com/ir-ontology#confirmedIncident">confirmed incident</a> <sup class="type-op" title="object property">op</sup>, <a href="#createdCoa" title="http://irkb.com/ir-ontology#createdCoa">created COA</a> <sup class="type-op" title="object property">op</sup>, <a href="#createdArtefact" title="http://irkb.com/ir-ontology#createdArtefact">created artefact</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAnalystId" title="http://irkb.com/ir-ontology#hasAnalystId">has analyst ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasAnalystEmail" title="http://irkb.com/ir-ontology#hasAnalystEmail">has analyst email</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#performed" title="http://irkb.com/ir-ontology#performed">performed</a> <sup class="type-op" title="object property">op</sup>, <a href="#performedAnalysis" title="http://irkb.com/ir-ontology#performedAnalysis">performed analysis</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasCoaCreationAnalyst" title="http://irkb.com/ir-ontology#hasCoaCreationAnalyst">has COA creation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAnalyst" title="http://irkb.com/ir-ontology#hasAnalyst">has analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConfirmationAnalyst" title="http://irkb.com/ir-ontology#hasConfirmationAnalyst">has confirmation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hadAssociatedEntity" title="http://irkb.com/ir-ontology#hadAssociatedEntity">had associated entity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCoaAssignedAnalyst" title="http://irkb.com/ir-ontology#hasCoaAssignedAnalyst">has COA assigned analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCoaCreationAnalyst" title="http://irkb.com/ir-ontology#hasCoaCreationAnalyst">has COA creation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAnalysisPerformingAnalyst" title="http://irkb.com/ir-ontology#hasAnalysisPerformingAnalyst">has analysis performing analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasArtefactCreationAnalyst" title="http://irkb.com/ir-ontology#hasArtefactCreationAnalyst">has artefact creation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCommunicationAuthor" title="http://irkb.com/ir-ontology#hasCommunicationAuthor">has communication author</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConfirmationAnalyst" title="http://irkb.com/ir-ontology#hasConfirmationAnalyst">has confirmation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>, <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>, <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>, <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
- <div class="entity" id="Application">
-  <h3>Application<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Application</p>
+ <div class="entity" id="Artefact">
+  <h3>Artefact<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Artefact</p>
   <div class="comment">
-   <span class="markdown">A software application that may be involved in security incidents.</span>
+   <span class="markdown">An observable piece of evidence collected from an incident (e.g., file hash, IP address, log entry).</span>
   </div>
   <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#Asset" title="http://irkb.com/ir-ontology#Asset">Asset</a> <sup class="type-c" title="class">c</sup>
-   </dd>
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#hasUrl" title="http://irkb.com/ir-ontology#hasUrl">has URL</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDomain" title="http://irkb.com/ir-ontology#hasDomain">has domain</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasUsername" title="http://irkb.com/ir-ontology#hasUsername">has username</a> <sup class="type-dp" title="data property">dp</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Asset">
-  <h3>Asset<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Asset</p>
-  <div class="comment">
-   <span class="markdown">Any valuable system, device, or data that needs protection.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    has sub-classes
-   </dt>
-   <dd>
-    <a href="#Application" title="http://irkb.com/ir-ontology#Application">Application</a> <sup class="type-c" title="class">c</sup>, <a href="#Email" title="http://irkb.com/ir-ontology#Email">Email</a> <sup class="type-c" title="class">c</sup>, <a href="#Server" title="http://irkb.com/ir-ontology#Server">Server</a> <sup class="type-c" title="class">c</sup>, <a href="#Workstation" title="http://irkb.com/ir-ontology#Workstation">Workstation</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasArtefactCreationAnalyst" title="http://irkb.com/ir-ontology#hasArtefactCreationAnalyst">has artefact creation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasArtefactCreationDateTime" title="http://irkb.com/ir-ontology#hasArtefactCreationDateTime">has artefact creation datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasArtefactDataValue" title="http://irkb.com/ir-ontology#hasArtefactDataValue">has artefact data value</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasArtefactType" title="http://irkb.com/ir-ontology#hasArtefactType">has artefact type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isArtefactOf" title="http://irkb.com/ir-ontology#isArtefactOf">is artefact of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasAffectedAsset" title="http://irkb.com/ir-ontology#hasAffectedAsset">has affected asset</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#createdArtefact" title="http://irkb.com/ir-ontology#createdArtefact">created artefact</a> <sup class="type-op" title="object property">op</sup>, <a href="#hadAssociatedEntity" title="http://irkb.com/ir-ontology#hadAssociatedEntity">had associated entity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasArtefact" title="http://irkb.com/ir-ontology#hasArtefact">has artefact</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>, <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>, <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>, <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -114,7 +84,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>Containment<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Containment</p>
   <div class="comment">
-   <span class="markdown">A course of action focused on containing the impact of an incident.</span>
+   <span class="markdown">Actions to limit the spread and impact of an incident.</span>
   </div>
   <dl class="description">
    <dt>
@@ -129,40 +99,40 @@ This section provides details for each class and property defined by Incident Re
   <h3>Course of Action<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#CourseOfAction</p>
   <div class="comment">
-   <span class="markdown">A planned response to a security incident.</span>
+   <span class="markdown">A planned response action to a security incident.</span>
   </div>
   <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
-   </dd>
    <dt>
     has sub-classes
    </dt>
    <dd>
-    <a href="#Containment" title="http://irkb.com/ir-ontology#Containment">Containment</a> <sup class="type-c" title="class">c</sup>, <a href="#DetectionAndAnalysis" title="http://irkb.com/ir-ontology#DetectionAndAnalysis">Detection and Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#Eradication" title="http://irkb.com/ir-ontology#Eradication">Eradication</a> <sup class="type-c" title="class">c</sup>, <a href="#PostIncidentActivity" title="http://irkb.com/ir-ontology#PostIncidentActivity">Post-Incident Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Recovery" title="http://irkb.com/ir-ontology#Recovery">Recovery</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Containment" title="http://irkb.com/ir-ontology#Containment">Containment</a> <sup class="type-c" title="class">c</sup>, <a href="#Detection" title="http://irkb.com/ir-ontology#Detection">Detection and Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#Eradication" title="http://irkb.com/ir-ontology#Eradication">Eradication</a> <sup class="type-c" title="class">c</sup>, <a href="#PostIncidentActivity" title="http://irkb.com/ir-ontology#PostIncidentActivity">Post-Incident Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Recovery" title="http://irkb.com/ir-ontology#Recovery">Recovery</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#hasCoaCreationAnalyst" title="http://irkb.com/ir-ontology#hasCoaCreationAnalyst">has COA creation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCoaCreationDateTime" title="http://irkb.com/ir-ontology#hasCoaCreationDateTime">has COA creation datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoaDescription" title="http://irkb.com/ir-ontology#hasCoaDescription">has COA description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoaNotes" title="http://irkb.com/ir-ontology#hasCoaNotes">has COA notes</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoaStatus" title="http://irkb.com/ir-ontology#hasCoaStatus">has COA status</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasCoaAssignedAnalyst" title="http://irkb.com/ir-ontology#hasCoaAssignedAnalyst">has COA assigned analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCoaCreationAnalyst" title="http://irkb.com/ir-ontology#hasCoaCreationAnalyst">has COA creation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCoaCreationDateTime" title="http://irkb.com/ir-ontology#hasCoaCreationDateTime">has COA creation datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoaDescription" title="http://irkb.com/ir-ontology#hasCoaDescription">has COA description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoaEndDateTime" title="http://irkb.com/ir-ontology#hasCoaEndDateTime">has COA end datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoaStartDateTime" title="http://irkb.com/ir-ontology#hasCoaStartDateTime">has COA start datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoaStatus" title="http://irkb.com/ir-ontology#hasCoaStatus">has COA status</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isCoaOf" title="http://irkb.com/ir-ontology#isCoaOf">is COA of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasCoa" title="http://irkb.com/ir-ontology#hasCoa">has course of action</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#assignedToCoa" title="http://irkb.com/ir-ontology#assignedToCoa">assigned to COA</a> <sup class="type-op" title="object property">op</sup>, <a href="#createdCoa" title="http://irkb.com/ir-ontology#createdCoa">created COA</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCoa" title="http://irkb.com/ir-ontology#hasCoa">has course of action</a> <sup class="type-op" title="object property">op</sup>, <a href="#wasUsedBy" title="http://irkb.com/ir-ontology#wasUsedBy">was used by</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>, <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>, <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>, <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
- <div class="entity" id="DetectionAndAnalysis">
+ <div class="entity" id="Detection">
   <h3>Detection and Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#DetectionAndAnalysis</p>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Detection</p>
   <div class="comment">
-   <span class="markdown">Activities related to detecting and analyzing security incidents.</span>
+   <span class="markdown">Activities to identify and assess security incidents.</span>
   </div>
   <dl class="description">
    <dt>
@@ -170,27 +140,6 @@ This section provides details for each class and property defined by Incident Re
    </dt>
    <dd>
     <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Email">
-  <h3>Email<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Email</p>
-  <div class="comment">
-   <span class="markdown">An email account or message that may be involved in security incidents.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#Asset" title="http://irkb.com/ir-ontology#Asset">Asset</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
-    is in domain of
-   </dt>
-   <dd>
-    <a href="#hasEmailAddress" title="http://irkb.com/ir-ontology#hasEmailAddress">has email address</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
   </dl>
  </div>
@@ -198,7 +147,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>Eradication<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Eradication</p>
   <div class="comment">
-   <span class="markdown">A course of action focused on removing threats from systems.</span>
+   <span class="markdown">Actions to remove threats and root causes from affected systems.</span>
   </div>
   <dl class="description">
    <dt>
@@ -206,6 +155,27 @@ This section provides details for each class and property defined by Incident Re
    </dt>
    <dd>
     <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="EventAction">
+  <h3>Event Action<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#EventAction</p>
+  <div class="comment">
+   <span class="markdown">A specific action taken or observed within a security event.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#hasEventActivity" title="http://irkb.com/ir-ontology#hasEventActivity">has event activity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventActivityDateTime" title="http://irkb.com/ir-ontology#hasEventActivityDateTime">has event activity datetime</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
   </dl>
  </div>
@@ -217,22 +187,22 @@ This section provides details for each class and property defined by Incident Re
   </div>
   <dl class="description">
    <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#hasAffectedAsset" title="http://irkb.com/ir-ontology#hasAffectedAsset">has affected asset</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConfirmationAnalyst" title="http://irkb.com/ir-ontology#hasConfirmationAnalyst">has confirmation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConfirmationDateTime" title="http://irkb.com/ir-ontology#hasConfirmationDateTime">has confirmation datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoa" title="http://irkb.com/ir-ontology#hasCoa">has course of action</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEndDateTime" title="http://irkb.com/ir-ontology#hasEndDateTime">has end datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentId" title="http://irkb.com/ir-ontology#hasIncidentId">has incident ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentDescription" title="http://irkb.com/ir-ontology#hasIncidentDescription">has incident description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentName" title="http://irkb.com/ir-ontology#hasIncidentName">has incident name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentSeverity" title="http://irkb.com/ir-ontology#hasIncidentSeverity">has incident severity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentType" title="http://irkb.com/ir-ontology#hasIncidentType">has incident type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEvent" title="http://irkb.com/ir-ontology#hasEvent">has security event</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hadAssociatedEntity" title="http://irkb.com/ir-ontology#hadAssociatedEntity">had associated entity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAnalysis" title="http://irkb.com/ir-ontology#hasAnalysis">has analysis</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasArtefact" title="http://irkb.com/ir-ontology#hasArtefact">has artefact</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConfirmationAnalyst" title="http://irkb.com/ir-ontology#hasConfirmationAnalyst">has confirmation analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasConfirmationDateTime" title="http://irkb.com/ir-ontology#hasConfirmationDateTime">has confirmation datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCoa" title="http://irkb.com/ir-ontology#hasCoa">has course of action</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEndDateTime" title="http://irkb.com/ir-ontology#hasEndDateTime">has end datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEvent" title="http://irkb.com/ir-ontology#hasEvent">has event</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasIncidentId" title="http://irkb.com/ir-ontology#hasIncidentId">has incident ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentCreationDateTime" title="http://irkb.com/ir-ontology#hasIncidentCreationDateTime">has incident creation datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentDescription" title="http://irkb.com/ir-ontology#hasIncidentDescription">has incident description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentName" title="http://irkb.com/ir-ontology#hasIncidentName">has incident name</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentSeverity" title="http://irkb.com/ir-ontology#hasIncidentSeverity">has incident severity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentStage" title="http://irkb.com/ir-ontology#hasIncidentStage">has incident stage</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentStatus" title="http://irkb.com/ir-ontology#hasIncidentStatus">has incident status</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasIncidentType" title="http://irkb.com/ir-ontology#hasIncidentType">has incident type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasPertainingCommunication" title="http://irkb.com/ir-ontology#hasPertainingCommunication">has pertaining communication</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#confirmedIncident" title="http://irkb.com/ir-ontology#confirmedIncident">confirmed incident</a> <sup class="type-op" title="object property">op</sup>, <a href="#isCoaOf" title="http://irkb.com/ir-ontology#isCoaOf">is COA of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isAnalysisOf" title="http://irkb.com/ir-ontology#isAnalysisOf">is analysis of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isArtefactOf" title="http://irkb.com/ir-ontology#isArtefactOf">is artefact of</a> <sup class="type-op" title="object property">op</sup>, <a href="#isEventOf" title="http://irkb.com/ir-ontology#isEventOf">is event of</a> <sup class="type-op" title="object property">op</sup>, <a href="#pertainsToIncident" title="http://irkb.com/ir-ontology#pertainsToIncident">pertains to incident</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>, <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>, <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>, <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -240,7 +210,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>Post-Incident Activity<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#PostIncidentActivity</p>
   <div class="comment">
-   <span class="markdown">Activities conducted after incident resolution to improve future response.</span>
+   <span class="markdown">Activities conducted after incident resolution (e.g., lessons learned, reporting).</span>
   </div>
   <dl class="description">
    <dt>
@@ -255,7 +225,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>Recovery<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Recovery</p>
   <div class="comment">
-   <span class="markdown">A course of action focused on restoring systems to normal operation.</span>
+   <span class="markdown">Actions to restore systems to normal operation.</span>
   </div>
   <dl class="description">
    <dt>
@@ -274,16 +244,22 @@ This section provides details for each class and property defined by Incident Re
   </div>
   <dl class="description">
    <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-   <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#hasAnalyst" title="http://irkb.com/ir-ontology#hasAnalyst">has analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasChatMessage" title="http://irkb.com/ir-ontology#hasChatMessage">has chat message</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChatMessageDateTime" title="http://irkb.com/ir-ontology#hasChatMessageDateTime">has chat message datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChatSentiment" title="http://irkb.com/ir-ontology#hasChatSentiment">has chat sentiment</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasChatMessage" title="http://irkb.com/ir-ontology#hasChatMessage">has chat message</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChatMessageDateTime" title="http://irkb.com/ir-ontology#hasChatMessageDateTime">has chat message datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChatSentiment" title="http://irkb.com/ir-ontology#hasChatSentiment">has chat sentiment</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasCommunicationAuthor" title="http://irkb.com/ir-ontology#hasCommunicationAuthor">has communication author</a> <sup class="type-op" title="object property">op</sup>, <a href="#pertainsToIncident" title="http://irkb.com/ir-ontology#pertainsToIncident">pertains to incident</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#authoredCommunication" title="http://irkb.com/ir-ontology#authoredCommunication">authored communication</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasPertainingCommunication" title="http://irkb.com/ir-ontology#hasPertainingCommunication">has pertaining communication</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>, <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>, <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>, <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -291,26 +267,26 @@ This section provides details for each class and property defined by Incident Re
   <h3>Security Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#SecurityAnalysis</p>
   <div class="comment">
-   <span class="markdown">The examination of security events to understand incidents.</span>
+   <span class="markdown">The analysis of observables from security events leading to an incident conclusion.</span>
   </div>
   <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
-   </dd>
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#hasSecurityAnalysisDataValue" title="http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue">has security analysis data value</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSecurityAnalysisDateTime" title="http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime">has security analysis datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSecurityAnalysisDetails" title="http://irkb.com/ir-ontology#hasSecurityAnalysisDetails">has security analysis details</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSecurityAnalysisType" title="http://irkb.com/ir-ontology#hasSecurityAnalysisType">has security analysis type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">was generated by</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#hasAnalysisPerformingAnalyst" title="http://irkb.com/ir-ontology#hasAnalysisPerformingAnalyst">has analysis performing analyst</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasSecurityAnalysisDataValue" title="http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue">has security analysis data value</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSecurityAnalysisDateTime" title="http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime">has security analysis datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSecurityAnalysisDetails" title="http://irkb.com/ir-ontology#hasSecurityAnalysisDetails">has security analysis details</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasSecurityAnalysisType" title="http://irkb.com/ir-ontology#hasSecurityAnalysisType">has security analysis type</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isAnalysisOf" title="http://irkb.com/ir-ontology#isAnalysisOf">is analysis of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">was generated by</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a> <sup class="type-op" title="object property">op</sup>, <a href="#wasUsedBy" title="http://irkb.com/ir-ontology#wasUsedBy">was used by</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated">generated</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#generated" title="http://irkb.com/ir-ontology#generated">generated</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasAnalysis" title="http://irkb.com/ir-ontology#hasAnalysis">has analysis</a> <sup class="type-op" title="object property">op</sup>, <a href="#performed" title="http://irkb.com/ir-ontology#performed">performed</a> <sup class="type-op" title="object property">op</sup>, <a href="#performedAnalysis" title="http://irkb.com/ir-ontology#performedAnalysis">performed analysis</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is disjoint with
+   </dt>
+   <dd>
+    <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>, <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>, <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>, <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>, <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -318,55 +294,40 @@ This section provides details for each class and property defined by Incident Re
   <h3>Security Event<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#SecurityEvent</p>
   <div class="comment">
-   <span class="markdown">An observable occurrence relevant to security of systems.</span>
+   <span class="markdown">An observable occurrence relevant to system security (e.g., alert from SIEM, IDS).</span>
   </div>
   <dl class="description">
    <dt>
-    has super-classes
+    has sub-classes
    </dt>
    <dd>
-    <a href="http://www.w3.org/2002/07/owl#Thing" target="_blank" title="http://www.w3.org/2002/07/owl#Thing">Thing</a> <sup class="type-c" title="class">c</sup>
+    <a href="#EventAction" title="http://irkb.com/ir-ontology#EventAction">Event Action</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated">generated</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEventId" title="http://irkb.com/ir-ontology#hasEventId">has event ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventActivity" title="http://irkb.com/ir-ontology#hasEventActivity">has event activity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventActivityDateTime" title="http://irkb.com/ir-ontology#hasEventActivityDateTime">has event activity datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventDescription" title="http://irkb.com/ir-ontology#hasEventDescription">has event description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#generated" title="http://irkb.com/ir-ontology#generated">generated</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEventId" title="http://irkb.com/ir-ontology#hasEventId">has event ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventDescription" title="http://irkb.com/ir-ontology#hasEventDescription">has event description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventTitle" title="http://irkb.com/ir-ontology#hasEventTitle">has event title</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isEventOf" title="http://irkb.com/ir-ontology#isEventOf">is event of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
    </dt>
    <dd>
-    <a href="#hasEvent" title="http://irkb.com/ir-ontology#hasEvent">has security event</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">was generated by</a> <sup class="type-op" title="object property">op</sup>
-   </dd>
-  </dl>
- </div>
- <div class="entity" id="Server">
-  <h3>Server<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Server</p>
-  <div class="comment">
-   <span class="markdown">A server system that may be involved in security incidents.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#Asset" title="http://irkb.com/ir-ontology#Asset">Asset</a> <sup class="type-c" title="class">c</sup>
+    <a href="#hadAssociatedEntity" title="http://irkb.com/ir-ontology#hadAssociatedEntity">had associated entity</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEvent" title="http://irkb.com/ir-ontology#hasEvent">has event</a> <sup class="type-op" title="object property">op</sup>, <a href="#performed" title="http://irkb.com/ir-ontology#performed">performed</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">was generated by</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
-    is in domain of
+    is disjoint with
    </dt>
    <dd>
-    <a href="#hasIpAddress" title="http://irkb.com/ir-ontology#hasIpAddress">has IP address</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasHostname" title="http://irkb.com/ir-ontology#hasHostname">has hostname</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>, <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>, <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>, <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>, <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>, <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="Tier1">
-  <h3>Tier 1 Analyst<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <h3>Tier 1<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Tier1</p>
   <div class="comment">
-   <span class="markdown">First-level security analyst who performs initial triage.</span>
+   <span class="markdown">First responder performing initial triage and categorization.</span>
   </div>
   <dl class="description">
    <dt>
@@ -378,10 +339,10 @@ This section provides details for each class and property defined by Incident Re
   </dl>
  </div>
  <div class="entity" id="Tier2">
-  <h3>Tier 2 Analyst<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <h3>Tier 2<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Tier2</p>
   <div class="comment">
-   <span class="markdown">Mid-level (Incident Responder) security analyst who performs deeper investigation.</span>
+   <span class="markdown">Incident responder handling deeper investigation and analysis.</span>
   </div>
   <dl class="description">
    <dt>
@@ -393,10 +354,10 @@ This section provides details for each class and property defined by Incident Re
   </dl>
  </div>
  <div class="entity" id="Tier3">
-  <h3>Tier 3 Analyst<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <h3>Tier 3<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Tier3</p>
   <div class="comment">
-   <span class="markdown">Senior security analyst who handles complex investigations.</span>
+   <span class="markdown">Senior analyst or subject matter expert handling complex investigations.</span>
   </div>
   <dl class="description">
    <dt>
@@ -407,41 +368,190 @@ This section provides details for each class and property defined by Incident Re
    </dd>
   </dl>
  </div>
- <div class="entity" id="Workstation">
-  <h3>Workstation<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Workstation</p>
-  <div class="comment">
-   <span class="markdown">An end-user computing device that may be involved in security incidents.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#Asset" title="http://irkb.com/ir-ontology#Asset">Asset</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
  <h3 id="properties" class="list">Object Properties</h3>
  <ul class="hlist">
-  <li><a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated">generated</a></li>
-  <li><a href="#hasAffectedAsset" title="http://irkb.com/ir-ontology#hasAffectedAsset">has affected asset</a></li>
-  <li><a href="#hasAnalyst" title="http://irkb.com/ir-ontology#hasAnalyst">has analyst</a></li>
+  <li><a href="#assignedToCoa" title="http://irkb.com/ir-ontology#assignedToCoa">assigned to COA</a></li>
+  <li><a href="#authoredCommunication" title="http://irkb.com/ir-ontology#authoredCommunication">authored communication</a></li>
+  <li><a href="#confirmedIncident" title="http://irkb.com/ir-ontology#confirmedIncident">confirmed incident</a></li>
+  <li><a href="#createdArtefact" title="http://irkb.com/ir-ontology#createdArtefact">created artefact</a></li>
+  <li><a href="#createdCoa" title="http://irkb.com/ir-ontology#createdCoa">created COA</a></li>
+  <li><a href="#generated" title="http://irkb.com/ir-ontology#generated">generated</a></li>
+  <li><a href="#hadAssociatedEntity" title="http://irkb.com/ir-ontology#hadAssociatedEntity">had associated entity</a></li>
+  <li><a href="#hasAnalysis" title="http://irkb.com/ir-ontology#hasAnalysis">has analysis</a></li>
+  <li><a href="#hasAnalysisPerformingAnalyst" title="http://irkb.com/ir-ontology#hasAnalysisPerformingAnalyst">has analysis performing analyst</a></li>
+  <li><a href="#hasArtefact" title="http://irkb.com/ir-ontology#hasArtefact">has artefact</a></li>
+  <li><a href="#hasArtefactCreationAnalyst" title="http://irkb.com/ir-ontology#hasArtefactCreationAnalyst">has artefact creation analyst</a></li>
+  <li><a href="#hasCoaAssignedAnalyst" title="http://irkb.com/ir-ontology#hasCoaAssignedAnalyst">has COA assigned analyst</a></li>
   <li><a href="#hasCoaCreationAnalyst" title="http://irkb.com/ir-ontology#hasCoaCreationAnalyst">has COA creation analyst</a></li>
+  <li><a href="#hasCommunicationAuthor" title="http://irkb.com/ir-ontology#hasCommunicationAuthor">has communication author</a></li>
   <li><a href="#hasConfirmationAnalyst" title="http://irkb.com/ir-ontology#hasConfirmationAnalyst">has confirmation analyst</a></li>
   <li><a href="#hasCoa" title="http://irkb.com/ir-ontology#hasCoa">has course of action</a></li>
-  <li><a href="#hasEvent" title="http://irkb.com/ir-ontology#hasEvent">has security event</a></li>
+  <li><a href="#hasEvent" title="http://irkb.com/ir-ontology#hasEvent">has event</a></li>
+  <li><a href="#hasPertainingCommunication" title="http://irkb.com/ir-ontology#hasPertainingCommunication">has pertaining communication</a></li>
+  <li><a href="#isAnalysisOf" title="http://irkb.com/ir-ontology#isAnalysisOf">is analysis of</a></li>
+  <li><a href="#isArtefactOf" title="http://irkb.com/ir-ontology#isArtefactOf">is artefact of</a></li>
+  <li><a href="#isCoaOf" title="http://irkb.com/ir-ontology#isCoaOf">is COA of</a></li>
+  <li><a href="#isEventOf" title="http://irkb.com/ir-ontology#isEventOf">is event of</a></li>
+  <li><a href="#performed" title="http://irkb.com/ir-ontology#performed">performed</a></li>
+  <li><a href="#performedAnalysis" title="http://irkb.com/ir-ontology#performedAnalysis">performed analysis</a></li>
+  <li><a href="#pertainsToIncident" title="http://irkb.com/ir-ontology#pertainsToIncident">pertains to incident</a></li>
   <li><a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">was generated by</a></li>
   <li><a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a></li>
+  <li><a href="#wasUsedBy" title="http://irkb.com/ir-ontology#wasUsedBy">was used by</a></li>
  </ul>
- <div class="entity" id="http://www.w3.org/ns/prov#generated">
-  <h3>generated<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#generated</p>
+ <div class="entity" id="assignedToCoa">
+  <h3>assigned to COA<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#assignedToCoa</p>
   <div class="comment">
-   <span class="markdown">Indicates that a security analysis was generated from a security event.</span>
+   <span class="markdown">Inverse of hasCoaAssignedAnalyst. Links an analyst to the courses of action they are assigned to execute.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasCoaAssignedAnalyst" title="http://irkb.com/ir-ontology#hasCoaAssignedAnalyst">has COA assigned analyst</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="authoredCommunication">
+  <h3>authored communication<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#authoredCommunication</p>
+  <div class="comment">
+   <span class="markdown">Inverse of hasCommunicationAuthor. Links an analyst to the communications they authored.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasCommunicationAuthor" title="http://irkb.com/ir-ontology#hasCommunicationAuthor">has communication author</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="confirmedIncident">
+  <h3>confirmed incident<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#confirmedIncident</p>
+  <div class="comment">
+   <span class="markdown">Inverse of hasConfirmationAnalyst. Links an analyst to the incidents they confirmed.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasConfirmationAnalyst" title="http://irkb.com/ir-ontology#hasConfirmationAnalyst">has confirmation analyst</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="createdArtefact">
+  <h3>created artefact<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#createdArtefact</p>
+  <div class="comment">
+   <span class="markdown">Inverse of hasArtefactCreationAnalyst. Links an analyst to the artefacts they created.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasArtefactCreationAnalyst" title="http://irkb.com/ir-ontology#hasArtefactCreationAnalyst">has artefact creation analyst</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="createdCoa">
+  <h3>created COA<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#createdCoa</p>
+  <div class="comment">
+   <span class="markdown">Inverse of hasCoaCreationAnalyst. Links an analyst to the courses of action they created.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasCoaCreationAnalyst" title="http://irkb.com/ir-ontology#hasCoaCreationAnalyst">has COA creation analyst</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="generated">
+  <h3>generated<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#generated</p>
+  <div class="comment">
+   <span class="markdown">Inverse of prov:wasGeneratedBy. Indicates a security event generated an analysis.</span>
   </div>
   <div class="description">
    <dl>
@@ -457,14 +567,20 @@ This section provides details for each class and property defined by Incident Re
     <dd>
      <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#wasGeneratedBy" title="http://www.w3.org/ns/prov#wasGeneratedBy">was generated by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="hasAffectedAsset">
-  <h3>has affected asset<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasAffectedAsset</p>
+ <div class="entity" id="hadAssociatedEntity">
+  <h3>had associated entity<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hadAssociatedEntity</p>
   <div class="comment">
-   <span class="markdown">Links an incident to the asset that was impacted during the security event.</span>
+   <span class="markdown">Inverse of prov:wasAssociatedWith. Indicates an incident had an associated entity.</span>
   </div>
   <div class="description">
    <dl>
@@ -478,16 +594,22 @@ This section provides details for each class and property defined by Incident Re
      has range
     </dt>
     <dd>
-     <a href="#Asset" title="http://irkb.com/ir-ontology#Asset">Asset</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="hasAnalyst">
-  <h3>has analyst<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasAnalyst</p>
+ <div class="entity" id="hasAnalysis">
+  <h3>has analysis<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasAnalysis</p>
   <div class="comment">
-   <span class="markdown">Associates a responder communication with the analyst involved.</span>
+   <span class="markdown">Links an incident to the security analyses performed on it.</span>
   </div>
   <div class="description">
    <dl>
@@ -495,13 +617,135 @@ This section provides details for each class and property defined by Incident Re
      has domain
     </dt>
     <dd>
-     <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isAnalysisOf" title="http://irkb.com/ir-ontology#isAnalysisOf">is analysis of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasAnalysisPerformingAnalyst">
+  <h3>has analysis performing analyst<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasAnalysisPerformingAnalyst</p>
+  <div class="comment">
+   <span class="markdown">Links a security analysis to the analyst who performed it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
     </dt>
     <dd>
      <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#performedAnalysis" title="http://irkb.com/ir-ontology#performedAnalysis">performed analysis</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasArtefact">
+  <h3>has artefact<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasArtefact</p>
+  <div class="comment">
+   <span class="markdown">Links an incident to related artefacts (evidence) collected during the investigation.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isArtefactOf" title="http://irkb.com/ir-ontology#isArtefactOf">is artefact of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasArtefactCreationAnalyst">
+  <h3>has artefact creation analyst<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasArtefactCreationAnalyst</p>
+  <div class="comment">
+   <span class="markdown">Links an artefact to the analyst who collected, created, or documented it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#createdArtefact" title="http://irkb.com/ir-ontology#createdArtefact">created artefact</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCoaAssignedAnalyst">
+  <h3>has COA assigned analyst<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasCoaAssignedAnalyst</p>
+  <div class="comment">
+   <span class="markdown">Links a course of action to the analyst responsible for executing it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#assignedToCoa" title="http://irkb.com/ir-ontology#assignedToCoa">assigned to COA</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -510,7 +754,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has COA creation analyst<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasCoaCreationAnalyst</p>
   <div class="comment">
-   <span class="markdown">Indicates which analyst created the course of action.</span>
+   <span class="markdown">Links a course of action to the analyst who created or planned it.</span>
   </div>
   <div class="description">
    <dl>
@@ -525,6 +769,41 @@ This section provides details for each class and property defined by Incident Re
     </dt>
     <dd>
      <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#createdCoa" title="http://irkb.com/ir-ontology#createdCoa">created COA</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCommunicationAuthor">
+  <h3>has communication author<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasCommunicationAuthor</p>
+  <div class="comment">
+   <span class="markdown">Links a communication to the analyst who authored it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#authoredCommunication" title="http://irkb.com/ir-ontology#authoredCommunication">authored communication</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -533,7 +812,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has confirmation analyst<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasConfirmationAnalyst</p>
   <div class="comment">
-   <span class="markdown">Links an incident to the analyst who confirmed its validity.</span>
+   <span class="markdown">Links an incident to the analyst who confirmed it as a genuine security incident.</span>
   </div>
   <div class="description">
    <dl>
@@ -549,6 +828,12 @@ This section provides details for each class and property defined by Incident Re
     <dd>
      <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#confirmedIncident" title="http://irkb.com/ir-ontology#confirmedIncident">confirmed incident</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
    </dl>
   </div>
  </div>
@@ -556,7 +841,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has course of action<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasCoa</p>
   <div class="comment">
-   <span class="markdown">Links an incident to the course of action taken to address it.</span>
+   <span class="markdown">Links an incident to the response actions (COA) taken to resolve it.</span>
   </div>
   <div class="description">
    <dl>
@@ -572,14 +857,20 @@ This section provides details for each class and property defined by Incident Re
     <dd>
      <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isCoaOf" title="http://irkb.com/ir-ontology#isCoaOf">is COA of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
    </dl>
   </div>
  </div>
  <div class="entity" id="hasEvent">
-  <h3>has security event<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <h3>has event<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasEvent</p>
   <div class="comment">
-   <span class="markdown">Connects an incident to the security events that compose it.</span>
+   <span class="markdown">Links an incident to one or more related security events that triggered or are part of it.</span>
   </div>
   <div class="description">
    <dl>
@@ -595,14 +886,107 @@ This section provides details for each class and property defined by Incident Re
     <dd>
      <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#isEventOf" title="http://irkb.com/ir-ontology#isEventOf">is event of</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="http://www.w3.org/ns/prov#used">
-  <h3>used<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#used</p>
+ <div class="entity" id="hasPertainingCommunication">
+  <h3>has pertaining communication<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasPertainingCommunication</p>
   <div class="comment">
-   <span class="markdown">Shows that a course of action utilized a specific security analysis.</span>
+   <span class="markdown">Inverse of pertainsToIncident. Links an incident to communications about it.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#pertainsToIncident" title="http://irkb.com/ir-ontology#pertainsToIncident">pertains to incident</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isAnalysisOf">
+  <h3>is analysis of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#isAnalysisOf</p>
+  <div class="comment">
+   <span class="markdown">Inverse of hasAnalysis. Links an analysis back to its incident.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasAnalysis" title="http://irkb.com/ir-ontology#hasAnalysis">has analysis</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isArtefactOf">
+  <h3>is artefact of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#isArtefactOf</p>
+  <div class="comment">
+   <span class="markdown">Inverse of hasArtefact. Links an artefact back to its incident.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasArtefact" title="http://irkb.com/ir-ontology#hasArtefact">has artefact</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="isCoaOf">
+  <h3>is COA of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#isCoaOf</p>
+  <div class="comment">
+   <span class="markdown">Inverse of hasCoa. Links a course of action back to its incident.</span>
   </div>
   <div class="description">
    <dl>
@@ -616,16 +1000,22 @@ This section provides details for each class and property defined by Incident Re
      has range
     </dt>
     <dd>
-     <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasCoa" title="http://irkb.com/ir-ontology#hasCoa">has course of action</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
  </div>
- <div class="entity" id="http://www.w3.org/ns/prov#wasAssociatedWith">
-  <h3>was associated with<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasAssociatedWith</p>
+ <div class="entity" id="isEventOf">
+  <h3>is event of<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#isEventOf</p>
   <div class="comment">
-   <span class="markdown">Indicates that an asset or communication was associated with an incident.</span>
+   <span class="markdown">Inverse of hasEvent. Links a security event back to its parent incident.</span>
   </div>
   <div class="description">
    <dl>
@@ -633,8 +1023,92 @@ This section provides details for each class and property defined by Incident Re
      has domain
     </dt>
     <dd>
-     <a href="#Asset" title="http://irkb.com/ir-ontology#Asset">Asset</a> <sup class="type-c" title="class">c</sup>
+     <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasEvent" title="http://irkb.com/ir-ontology#hasEvent">has event</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="performed">
+  <h3>performed<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#performed</p>
+  <div class="comment">
+   <span class="markdown">Inverse of prov:wasPerformedBy. Indicates an analyst performed an activity.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="performedAnalysis">
+  <h3>performed analysis<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#performedAnalysis</p>
+  <div class="comment">
+   <span class="markdown">Inverse of hasAnalysisPerformingAnalyst. Links an analyst to the analyses they performed.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasAnalysisPerformingAnalyst" title="http://irkb.com/ir-ontology#hasAnalysisPerformingAnalyst">has analysis performing analyst</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="pertainsToIncident">
+  <h3>pertains to incident<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#pertainsToIncident</p>
+  <div class="comment">
+   <span class="markdown">Links a communication to the incident it discusses.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
     <dd>
      <a href="#ResponderCommunication" title="http://irkb.com/ir-ontology#ResponderCommunication">Responder Communication</a> <sup class="type-c" title="class">c</sup>
     </dd>
@@ -644,6 +1118,70 @@ This section provides details for each class and property defined by Incident Re
     <dd>
      <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
     </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hasPertainingCommunication" title="http://irkb.com/ir-ontology#hasPertainingCommunication">has pertaining communication</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#used">
+  <h3>used<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#used</p>
+  <div class="comment">
+   <span class="markdown">Indicates that a course of action used specific analysis</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#wasUsedBy" title="http://irkb.com/ir-ontology#wasUsedBy">was used by</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="http://www.w3.org/ns/prov#wasAssociatedWith">
+  <h3>was associated with<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasAssociatedWith</p>
+  <div class="comment">
+   <span class="markdown">Indicates association with an incident</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#hadAssociatedEntity" title="http://irkb.com/ir-ontology#hadAssociatedEntity">had associated entity</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
    </dl>
   </div>
  </div>
@@ -651,7 +1189,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>was generated by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasGeneratedBy</p>
   <div class="comment">
-   <span class="markdown">Indicates that a security analysis was generated by a security event.</span>
+   <span class="markdown">Indicates the security event that generated this analysis</span>
   </div>
   <div class="description">
    <dl>
@@ -666,6 +1204,12 @@ This section provides details for each class and property defined by Incident Re
     </dt>
     <dd>
      <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#generated" title="http://irkb.com/ir-ontology#generated">generated</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -674,7 +1218,36 @@ This section provides details for each class and property defined by Incident Re
   <h3>was performed by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://www.w3.org/ns/prov#wasPerformedBy</p>
   <div class="comment">
-   <span class="markdown">Shows that a security event or analysis was performed by a specific analyst.</span>
+   <span class="markdown">Indicates the analyst who performed this activity</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#performed" title="http://irkb.com/ir-ontology#performed">performed</a> <sup class="type-op" title="object property">op</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="wasUsedBy">
+  <h3>was used by<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#wasUsedBy</p>
+  <div class="comment">
+   <span class="markdown">Inverse of prov:used. Indicates an analysis was used by a course of action.</span>
   </div>
   <div class="description">
    <dl>
@@ -684,14 +1257,17 @@ This section provides details for each class and property defined by Incident Re
     <dd>
      <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>
     </dd>
-    <dd>
-     <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
-    </dd>
     <dt>
      has range
     </dt>
     <dd>
-     <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a> <sup class="type-c" title="class">c</sup>
+     <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     is inverse of
+    </dt>
+    <dd>
+     <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a> <sup class="type-op" title="object property">op</sup>
     </dd>
    </dl>
   </div>
@@ -701,40 +1277,42 @@ This section provides details for each class and property defined by Incident Re
  <ul class="hlist">
   <li><a href="#hasAnalystEmail" title="http://irkb.com/ir-ontology#hasAnalystEmail">has analyst email</a></li>
   <li><a href="#hasAnalystId" title="http://irkb.com/ir-ontology#hasAnalystId">has analyst ID</a></li>
+  <li><a href="#hasArtefactCreationDateTime" title="http://irkb.com/ir-ontology#hasArtefactCreationDateTime">has artefact creation datetime</a></li>
+  <li><a href="#hasArtefactDataValue" title="http://irkb.com/ir-ontology#hasArtefactDataValue">has artefact data value</a></li>
+  <li><a href="#hasArtefactType" title="http://irkb.com/ir-ontology#hasArtefactType">has artefact type</a></li>
   <li><a href="#hasChatMessage" title="http://irkb.com/ir-ontology#hasChatMessage">has chat message</a></li>
   <li><a href="#hasChatMessageDateTime" title="http://irkb.com/ir-ontology#hasChatMessageDateTime">has chat message datetime</a></li>
   <li><a href="#hasChatSentiment" title="http://irkb.com/ir-ontology#hasChatSentiment">has chat sentiment</a></li>
   <li><a href="#hasCoaCreationDateTime" title="http://irkb.com/ir-ontology#hasCoaCreationDateTime">has COA creation datetime</a></li>
   <li><a href="#hasCoaDescription" title="http://irkb.com/ir-ontology#hasCoaDescription">has COA description</a></li>
-  <li><a href="#hasCoaNotes" title="http://irkb.com/ir-ontology#hasCoaNotes">has COA notes</a></li>
+  <li><a href="#hasCoaEndDateTime" title="http://irkb.com/ir-ontology#hasCoaEndDateTime">has COA end datetime</a></li>
+  <li><a href="#hasCoaStartDateTime" title="http://irkb.com/ir-ontology#hasCoaStartDateTime">has COA start datetime</a></li>
   <li><a href="#hasCoaStatus" title="http://irkb.com/ir-ontology#hasCoaStatus">has COA status</a></li>
   <li><a href="#hasConfirmationDateTime" title="http://irkb.com/ir-ontology#hasConfirmationDateTime">has confirmation datetime</a></li>
-  <li><a href="#hasDomain" title="http://irkb.com/ir-ontology#hasDomain">has domain</a></li>
-  <li><a href="#hasEmailAddress" title="http://irkb.com/ir-ontology#hasEmailAddress">has email address</a></li>
   <li><a href="#hasEndDateTime" title="http://irkb.com/ir-ontology#hasEndDateTime">has end datetime</a></li>
   <li><a href="#hasEventActivity" title="http://irkb.com/ir-ontology#hasEventActivity">has event activity</a></li>
   <li><a href="#hasEventActivityDateTime" title="http://irkb.com/ir-ontology#hasEventActivityDateTime">has event activity datetime</a></li>
   <li><a href="#hasEventDescription" title="http://irkb.com/ir-ontology#hasEventDescription">has event description</a></li>
   <li><a href="#hasEventId" title="http://irkb.com/ir-ontology#hasEventId">has event ID</a></li>
-  <li><a href="#hasHostname" title="http://irkb.com/ir-ontology#hasHostname">has hostname</a></li>
+  <li><a href="#hasEventTitle" title="http://irkb.com/ir-ontology#hasEventTitle">has event title</a></li>
+  <li><a href="#hasIncidentCreationDateTime" title="http://irkb.com/ir-ontology#hasIncidentCreationDateTime">has incident creation datetime</a></li>
   <li><a href="#hasIncidentDescription" title="http://irkb.com/ir-ontology#hasIncidentDescription">has incident description</a></li>
   <li><a href="#hasIncidentId" title="http://irkb.com/ir-ontology#hasIncidentId">has incident ID</a></li>
   <li><a href="#hasIncidentName" title="http://irkb.com/ir-ontology#hasIncidentName">has incident name</a></li>
   <li><a href="#hasIncidentSeverity" title="http://irkb.com/ir-ontology#hasIncidentSeverity">has incident severity</a></li>
+  <li><a href="#hasIncidentStage" title="http://irkb.com/ir-ontology#hasIncidentStage">has incident stage</a></li>
+  <li><a href="#hasIncidentStatus" title="http://irkb.com/ir-ontology#hasIncidentStatus">has incident status</a></li>
   <li><a href="#hasIncidentType" title="http://irkb.com/ir-ontology#hasIncidentType">has incident type</a></li>
-  <li><a href="#hasIpAddress" title="http://irkb.com/ir-ontology#hasIpAddress">has IP address</a></li>
   <li><a href="#hasSecurityAnalysisDataValue" title="http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue">has security analysis data value</a></li>
   <li><a href="#hasSecurityAnalysisDateTime" title="http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime">has security analysis datetime</a></li>
   <li><a href="#hasSecurityAnalysisDetails" title="http://irkb.com/ir-ontology#hasSecurityAnalysisDetails">has security analysis details</a></li>
   <li><a href="#hasSecurityAnalysisType" title="http://irkb.com/ir-ontology#hasSecurityAnalysisType">has security analysis type</a></li>
-  <li><a href="#hasUrl" title="http://irkb.com/ir-ontology#hasUrl">has URL</a></li>
-  <li><a href="#hasUsername" title="http://irkb.com/ir-ontology#hasUsername">has username</a></li>
  </ul>
  <div class="entity" id="hasAnalystEmail">
   <h3>has analyst email<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasAnalystEmail</p>
   <div class="comment">
-   <span class="markdown">The email address of an analyst.</span>
+   <span class="markdown">Email address of the analyst.</span>
   </div>
   <div class="description">
    <dl>
@@ -757,7 +1335,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has analyst ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasAnalystId</p>
   <div class="comment">
-   <span class="markdown">The unique identifier for an analyst.</span>
+   <span class="markdown">Unique identifier for an analyst (e.g., employee ID).</span>
   </div>
   <div class="description">
    <dl>
@@ -776,11 +1354,80 @@ This section provides details for each class and property defined by Incident Re
    </dl>
   </div>
  </div>
+ <div class="entity" id="hasArtefactCreationDateTime">
+  <h3>has artefact creation datetime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasArtefactCreationDateTime</p>
+  <div class="comment">
+   <span class="markdown">Timestamp when the artefact was created, collected, or observed.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasArtefactDataValue">
+  <h3>has artefact data value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasArtefactDataValue</p>
+  <div class="comment">
+   <span class="markdown">The actual content or value of the artefact (e.g., "192.0.2.1", "a1b2c3d4e5...").</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasArtefactType">
+  <h3>has artefact type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasArtefactType</p>
+  <div class="comment">
+   <span class="markdown">Classification of the artefact (e.g., FileHash, IPAddress, URL, UserAgent).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="hasChatMessage">
   <h3>has chat message<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasChatMessage</p>
   <div class="comment">
-   <span class="markdown">The content of a communication between responders.</span>
+   <span class="markdown">The content or body of the communication message.</span>
   </div>
   <div class="description">
    <dl>
@@ -803,7 +1450,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has chat message datetime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasChatMessageDateTime</p>
   <div class="comment">
-   <span class="markdown">The timestamp when a communication occurred.</span>
+   <span class="markdown">Timestamp when the communication occurred.</span>
   </div>
   <div class="description">
    <dl>
@@ -826,7 +1473,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has chat sentiment<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasChatSentiment</p>
   <div class="comment">
-   <span class="markdown">The sentiment analysis result of a communication.</span>
+   <span class="markdown">The sentiment or tone of the communication.</span>
   </div>
   <div class="description">
    <dl>
@@ -849,7 +1496,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has COA creation datetime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasCoaCreationDateTime</p>
   <div class="comment">
-   <span class="markdown">The timestamp when a course of action was created.</span>
+   <span class="markdown">Timestamp when the course of action was created.</span>
   </div>
   <div class="description">
    <dl>
@@ -872,7 +1519,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has COA description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasCoaDescription</p>
   <div class="comment">
-   <span class="markdown">The narrative description of a course of action.</span>
+   <span class="markdown">Narrative description of the course of action and its intended effect.</span>
   </div>
   <div class="description">
    <dl>
@@ -891,11 +1538,11 @@ This section provides details for each class and property defined by Incident Re
    </dl>
   </div>
  </div>
- <div class="entity" id="hasCoaNotes">
-  <h3>has COA notes<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasCoaNotes</p>
+ <div class="entity" id="hasCoaEndDateTime">
+  <h3>has COA end datetime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasCoaEndDateTime</p>
   <div class="comment">
-   <span class="markdown">Additional notes about a course of action.</span>
+   <span class="markdown">Timestamp when execution of the course of action was completed.</span>
   </div>
   <div class="description">
    <dl>
@@ -909,7 +1556,30 @@ This section provides details for each class and property defined by Incident Re
      has range
     </dt>
     <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasCoaStartDateTime">
+  <h3>has COA start datetime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasCoaStartDateTime</p>
+  <div class="comment">
+   <span class="markdown">Timestamp when execution of the course of action was initiated.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
     </dd>
    </dl>
   </div>
@@ -918,7 +1588,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has COA status<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasCoaStatus</p>
   <div class="comment">
-   <span class="markdown">The current status of a course of action (e.g., pending, executed).</span>
+   <span class="markdown">Current execution status of the course of action (e.g., Planned, In Progress, Completed, Failed).</span>
   </div>
   <div class="description">
    <dl>
@@ -941,7 +1611,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has confirmation datetime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasConfirmationDateTime</p>
   <div class="comment">
-   <span class="markdown">The timestamp when an incident was confirmed.</span>
+   <span class="markdown">Timestamp when the incident was confirmed as genuine.</span>
   </div>
   <div class="description">
    <dl>
@@ -960,57 +1630,11 @@ This section provides details for each class and property defined by Incident Re
    </dl>
   </div>
  </div>
- <div class="entity" id="hasDomain">
-  <h3>has domain<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasDomain</p>
-  <div class="comment">
-   <span class="markdown">The domain associated with an application.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Application" title="http://irkb.com/ir-ontology#Application">Application</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasEmailAddress">
-  <h3>has email address<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasEmailAddress</p>
-  <div class="comment">
-   <span class="markdown">The email address associated with an email asset.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Email" title="http://irkb.com/ir-ontology#Email">Email</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="hasEndDateTime">
   <h3>has end datetime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasEndDateTime</p>
   <div class="comment">
-   <span class="markdown">The timestamp when incident response concluded.</span>
+   <span class="markdown">Timestamp when incident response was formally concluded.</span>
   </div>
   <div class="description">
    <dl>
@@ -1033,7 +1657,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has event activity<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasEventActivity</p>
   <div class="comment">
-   <span class="markdown">Description of the activity that occurred in a security event.</span>
+   <span class="markdown">Description of the specific activity within a security event.</span>
   </div>
   <div class="description">
    <dl>
@@ -1041,7 +1665,7 @@ This section provides details for each class and property defined by Incident Re
      has domain
     </dt>
     <dd>
-     <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
+     <a href="#EventAction" title="http://irkb.com/ir-ontology#EventAction">Event Action</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1056,7 +1680,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has event activity datetime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasEventActivityDateTime</p>
   <div class="comment">
-   <span class="markdown">The timestamp when a security event occurred.</span>
+   <span class="markdown">Timestamp when the specific security event activity occurred.</span>
   </div>
   <div class="description">
    <dl>
@@ -1064,7 +1688,7 @@ This section provides details for each class and property defined by Incident Re
      has domain
     </dt>
     <dd>
-     <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
+     <a href="#EventAction" title="http://irkb.com/ir-ontology#EventAction">Event Action</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1079,7 +1703,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has event description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasEventDescription</p>
   <div class="comment">
-   <span class="markdown">Detailed description of a security event.</span>
+   <span class="markdown">Detailed description of the security event.</span>
   </div>
   <div class="description">
    <dl>
@@ -1102,7 +1726,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has event ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasEventId</p>
   <div class="comment">
-   <span class="markdown">Unique identifier for a security event.</span>
+   <span class="markdown">Unique identifier for a security event (e.g., from SIEM or IDS).</span>
   </div>
   <div class="description">
    <dl>
@@ -1121,11 +1745,11 @@ This section provides details for each class and property defined by Incident Re
    </dl>
   </div>
  </div>
- <div class="entity" id="hasHostname">
-  <h3>has hostname<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasHostname</p>
+ <div class="entity" id="hasEventTitle">
+  <h3>has event title<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasEventTitle</p>
   <div class="comment">
-   <span class="markdown">The hostname of a server asset.</span>
+   <span class="markdown">Short title or name for the security event.</span>
   </div>
   <div class="description">
    <dl>
@@ -1133,7 +1757,7 @@ This section provides details for each class and property defined by Incident Re
      has domain
     </dt>
     <dd>
-     <a href="#Server" title="http://irkb.com/ir-ontology#Server">Server</a> <sup class="type-c" title="class">c</sup>
+     <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1144,11 +1768,34 @@ This section provides details for each class and property defined by Incident Re
    </dl>
   </div>
  </div>
+ <div class="entity" id="hasIncidentCreationDateTime">
+  <h3>has incident creation datetime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasIncidentCreationDateTime</p>
+  <div class="comment">
+   <span class="markdown">Timestamp when the incident record was first created.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#dateTime" target="_blank" title="http://www.w3.org/2001/XMLSchema#dateTime">date Time</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
  <div class="entity" id="hasIncidentDescription">
   <h3>has incident description<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasIncidentDescription</p>
   <div class="comment">
-   <span class="markdown">Detailed description of an incident.</span>
+   <span class="markdown">Detailed description of an incident's nature, impact, and scope.</span>
   </div>
   <div class="description">
    <dl>
@@ -1171,7 +1818,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has incident ID<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasIncidentId</p>
   <div class="comment">
-   <span class="markdown">Unique identifier for an incident.</span>
+   <span class="markdown">Unique identifier for an incident (e.g., INC-2025-001).</span>
   </div>
   <div class="description">
    <dl>
@@ -1194,7 +1841,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has incident name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasIncidentName</p>
   <div class="comment">
-   <span class="markdown">Human-readable name for an incident.</span>
+   <span class="markdown">Title of the incident.</span>
   </div>
   <div class="description">
    <dl>
@@ -1217,7 +1864,53 @@ This section provides details for each class and property defined by Incident Re
   <h3>has incident severity<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasIncidentSeverity</p>
   <div class="comment">
-   <span class="markdown">The severity level of an incident (e.g., low, medium, high).</span>
+   <span class="markdown">The severity level of an incident (e.g., Low, Medium, High, Critical).</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIncidentStage">
+  <h3>has incident stage<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasIncidentStage</p>
+  <div class="comment">
+   <span class="markdown">Current stage in the incident lifecycle.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="hasIncidentStatus">
+  <h3>has incident status<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasIncidentStatus</p>
+  <div class="comment">
+   <span class="markdown">Current status of the incident.</span>
   </div>
   <div class="description">
    <dl>
@@ -1240,7 +1933,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has incident type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasIncidentType</p>
   <div class="comment">
-   <span class="markdown">Classification of the incident (e.g., malware, phishing).</span>
+   <span class="markdown">Classification of the incident.</span>
   </div>
   <div class="description">
    <dl>
@@ -1259,34 +1952,11 @@ This section provides details for each class and property defined by Incident Re
    </dl>
   </div>
  </div>
- <div class="entity" id="hasIpAddress">
-  <h3>has IP address<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasIpAddress</p>
-  <div class="comment">
-   <span class="markdown">The IP address of a server asset.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Server" title="http://irkb.com/ir-ontology#Server">Server</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
  <div class="entity" id="hasSecurityAnalysisDataValue">
   <h3>has security analysis data value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue</p>
   <div class="comment">
-   <span class="markdown">The data value resulting from security analysis.</span>
+   <span class="markdown">The data value resulting from analysis (e.g., "C2 Server IP", "Malware Family Name").</span>
   </div>
   <div class="description">
    <dl>
@@ -1309,7 +1979,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has security analysis datetime<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime</p>
   <div class="comment">
-   <span class="markdown">The timestamp when security analysis was performed.</span>
+   <span class="markdown">Timestamp when the security analysis was performed.</span>
   </div>
   <div class="description">
    <dl>
@@ -1332,7 +2002,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has security analysis details<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasSecurityAnalysisDetails</p>
   <div class="comment">
-   <span class="markdown">Detailed findings from security analysis.</span>
+   <span class="markdown">Detailed findings and conclusions from the analysis.</span>
   </div>
   <div class="description">
    <dl>
@@ -1355,7 +2025,7 @@ This section provides details for each class and property defined by Incident Re
   <h3>has security analysis type<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasSecurityAnalysisType</p>
   <div class="comment">
-   <span class="markdown">The type of analysis performed (e.g., forensic, network).</span>
+   <span class="markdown">The type of analysis performed (e.g., Malware Analysis, Network Analysis, Timeline Analysis).</span>
   </div>
   <div class="description">
    <dl>
@@ -1364,52 +2034,6 @@ This section provides details for each class and property defined by Incident Re
     </dt>
     <dd>
      <a href="#SecurityAnalysis" title="http://irkb.com/ir-ontology#SecurityAnalysis">Security Analysis</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasUrl">
-  <h3>has URL<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasUrl</p>
-  <div class="comment">
-   <span class="markdown">The URL associated with an application.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Application" title="http://irkb.com/ir-ontology#Application">Application</a> <sup class="type-c" title="class">c</sup>
-    </dd>
-    <dt>
-     has range
-    </dt>
-    <dd>
-     <a href="http://www.w3.org/2001/XMLSchema#anyURI" target="_blank" title="http://www.w3.org/2001/XMLSchema#anyURI">any U R I</a>
-    </dd>
-   </dl>
-  </div>
- </div>
- <div class="entity" id="hasUsername">
-  <h3>has username<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#hasUsername</p>
-  <div class="comment">
-   <span class="markdown">The username associated with an application.</span>
-  </div>
-  <div class="description">
-   <dl>
-    <dt>
-     has domain
-    </dt>
-    <dd>
-     <a href="#Application" title="http://irkb.com/ir-ontology#Application">Application</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range

@@ -9,10 +9,7 @@ This ontology has the following classes and properties.</span>
       <a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a>
    </li>
    <li>
-      <a href="#Application" title="http://irkb.com/ir-ontology#Application">Application</a>
-   </li>
-   <li>
-      <a href="#Asset" title="http://irkb.com/ir-ontology#Asset">Asset</a>
+      <a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a>
    </li>
    <li>
       <a href="#Containment" title="http://irkb.com/ir-ontology#Containment">Containment</a>
@@ -21,19 +18,20 @@ This ontology has the following classes and properties.</span>
       <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a>
    </li>
    <li>
-      <a href="#DetectionAndAnalysis" title="http://irkb.com/ir-ontology#DetectionAndAnalysis">Detection and Analysis</a>
-   </li>
-   <li>
-      <a href="#Email" title="http://irkb.com/ir-ontology#Email">Email</a>
+      <a href="#Detection" title="http://irkb.com/ir-ontology#Detection">Detection and Analysis</a>
    </li>
    <li>
       <a href="#Eradication" title="http://irkb.com/ir-ontology#Eradication">Eradication</a>
    </li>
    <li>
+      <a href="#EventAction" title="http://irkb.com/ir-ontology#EventAction">Event Action</a>
+   </li>
+   <li>
       <a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a>
    </li>
    <li>
-      <a href="#PostIncidentActivity" title="http://irkb.com/ir-ontology#PostIncidentActivity">Post-Incident Activity</a>
+      <a href="#PostIncidentActivity"
+         title="http://irkb.com/ir-ontology#PostIncidentActivity">Post-Incident Activity</a>
    </li>
    <li>
       <a href="#Recovery" title="http://irkb.com/ir-ontology#Recovery">Recovery</a>
@@ -49,35 +47,63 @@ This ontology has the following classes and properties.</span>
       <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a>
    </li>
    <li>
-      <a href="#Server" title="http://irkb.com/ir-ontology#Server">Server</a>
+      <a href="#Tier1" title="http://irkb.com/ir-ontology#Tier1">Tier 1</a>
    </li>
    <li>
-      <a href="#Tier1" title="http://irkb.com/ir-ontology#Tier1">Tier 1 Analyst</a>
+      <a href="#Tier2" title="http://irkb.com/ir-ontology#Tier2">Tier 2</a>
    </li>
    <li>
-      <a href="#Tier2" title="http://irkb.com/ir-ontology#Tier2">Tier 2 Analyst</a>
-   </li>
-   <li>
-      <a href="#Tier3" title="http://irkb.com/ir-ontology#Tier3">Tier 3 Analyst</a>
-   </li>
-   <li>
-      <a href="#Workstation" title="http://irkb.com/ir-ontology#Workstation">Workstation</a>
+      <a href="#Tier3" title="http://irkb.com/ir-ontology#Tier3">Tier 3</a>
    </li>
 </ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#http://www.w3.org/ns/prov#generated" title="http://www.w3.org/ns/prov#generated">generated</a>
+      <a href="#assignedToCoa" title="http://irkb.com/ir-ontology#assignedToCoa">assigned to COA</a>
    </li>
    <li>
-      <a href="#hasAffectedAsset" title="http://irkb.com/ir-ontology#hasAffectedAsset">has affected asset</a>
+      <a href="#authoredCommunication" title="http://irkb.com/ir-ontology#authoredCommunication">authored communication</a>
    </li>
    <li>
-      <a href="#hasAnalyst" title="http://irkb.com/ir-ontology#hasAnalyst">has analyst</a>
+      <a href="#confirmedIncident" title="http://irkb.com/ir-ontology#confirmedIncident">confirmed incident</a>
+   </li>
+   <li>
+      <a href="#createdArtefact" title="http://irkb.com/ir-ontology#createdArtefact">created artefact</a>
+   </li>
+   <li>
+      <a href="#createdCoa" title="http://irkb.com/ir-ontology#createdCoa">created COA</a>
+   </li>
+   <li>
+      <a href="#generated" title="http://irkb.com/ir-ontology#generated">generated</a>
+   </li>
+   <li>
+      <a href="#hadAssociatedEntity" title="http://irkb.com/ir-ontology#hadAssociatedEntity">had associated entity</a>
+   </li>
+   <li>
+      <a href="#hasAnalysis" title="http://irkb.com/ir-ontology#hasAnalysis">has analysis</a>
+   </li>
+   <li>
+      <a href="#hasAnalysisPerformingAnalyst"
+         title="http://irkb.com/ir-ontology#hasAnalysisPerformingAnalyst">has analysis performing analyst</a>
+   </li>
+   <li>
+      <a href="#hasArtefact" title="http://irkb.com/ir-ontology#hasArtefact">has artefact</a>
+   </li>
+   <li>
+      <a href="#hasArtefactCreationAnalyst"
+         title="http://irkb.com/ir-ontology#hasArtefactCreationAnalyst">has artefact creation analyst</a>
+   </li>
+   <li>
+      <a href="#hasCoaAssignedAnalyst"
+         title="http://irkb.com/ir-ontology#hasCoaAssignedAnalyst">has COA assigned analyst</a>
    </li>
    <li>
       <a href="#hasCoaCreationAnalyst"
          title="http://irkb.com/ir-ontology#hasCoaCreationAnalyst">has COA creation analyst</a>
+   </li>
+   <li>
+      <a href="#hasCommunicationAuthor"
+         title="http://irkb.com/ir-ontology#hasCommunicationAuthor">has communication author</a>
    </li>
    <li>
       <a href="#hasConfirmationAnalyst"
@@ -87,7 +113,32 @@ This ontology has the following classes and properties.</span>
       <a href="#hasCoa" title="http://irkb.com/ir-ontology#hasCoa">has course of action</a>
    </li>
    <li>
-      <a href="#hasEvent" title="http://irkb.com/ir-ontology#hasEvent">has security event</a>
+      <a href="#hasEvent" title="http://irkb.com/ir-ontology#hasEvent">has event</a>
+   </li>
+   <li>
+      <a href="#hasPertainingCommunication"
+         title="http://irkb.com/ir-ontology#hasPertainingCommunication">has pertaining communication</a>
+   </li>
+   <li>
+      <a href="#isAnalysisOf" title="http://irkb.com/ir-ontology#isAnalysisOf">is analysis of</a>
+   </li>
+   <li>
+      <a href="#isArtefactOf" title="http://irkb.com/ir-ontology#isArtefactOf">is artefact of</a>
+   </li>
+   <li>
+      <a href="#isCoaOf" title="http://irkb.com/ir-ontology#isCoaOf">is COA of</a>
+   </li>
+   <li>
+      <a href="#isEventOf" title="http://irkb.com/ir-ontology#isEventOf">is event of</a>
+   </li>
+   <li>
+      <a href="#performed" title="http://irkb.com/ir-ontology#performed">performed</a>
+   </li>
+   <li>
+      <a href="#performedAnalysis" title="http://irkb.com/ir-ontology#performedAnalysis">performed analysis</a>
+   </li>
+   <li>
+      <a href="#pertainsToIncident" title="http://irkb.com/ir-ontology#pertainsToIncident">pertains to incident</a>
    </li>
    <li>
       <a href="#http://www.w3.org/ns/prov#used" title="http://www.w3.org/ns/prov#used">used</a>
@@ -101,6 +152,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a>
    </li>
+   <li>
+      <a href="#wasUsedBy" title="http://irkb.com/ir-ontology#wasUsedBy">was used by</a>
+   </li>
 </ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
@@ -109,6 +163,16 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#hasAnalystId" title="http://irkb.com/ir-ontology#hasAnalystId">has analyst ID</a>
+   </li>
+   <li>
+      <a href="#hasArtefactCreationDateTime"
+         title="http://irkb.com/ir-ontology#hasArtefactCreationDateTime">has artefact creation datetime</a>
+   </li>
+   <li>
+      <a href="#hasArtefactDataValue" title="http://irkb.com/ir-ontology#hasArtefactDataValue">has artefact data value</a>
+   </li>
+   <li>
+      <a href="#hasArtefactType" title="http://irkb.com/ir-ontology#hasArtefactType">has artefact type</a>
    </li>
    <li>
       <a href="#hasChatMessage" title="http://irkb.com/ir-ontology#hasChatMessage">has chat message</a>
@@ -128,7 +192,10 @@ This ontology has the following classes and properties.</span>
       <a href="#hasCoaDescription" title="http://irkb.com/ir-ontology#hasCoaDescription">has COA description</a>
    </li>
    <li>
-      <a href="#hasCoaNotes" title="http://irkb.com/ir-ontology#hasCoaNotes">has COA notes</a>
+      <a href="#hasCoaEndDateTime" title="http://irkb.com/ir-ontology#hasCoaEndDateTime">has COA end datetime</a>
+   </li>
+   <li>
+      <a href="#hasCoaStartDateTime" title="http://irkb.com/ir-ontology#hasCoaStartDateTime">has COA start datetime</a>
    </li>
    <li>
       <a href="#hasCoaStatus" title="http://irkb.com/ir-ontology#hasCoaStatus">has COA status</a>
@@ -136,12 +203,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#hasConfirmationDateTime"
          title="http://irkb.com/ir-ontology#hasConfirmationDateTime">has confirmation datetime</a>
-   </li>
-   <li>
-      <a href="#hasDomain" title="http://irkb.com/ir-ontology#hasDomain">has domain</a>
-   </li>
-   <li>
-      <a href="#hasEmailAddress" title="http://irkb.com/ir-ontology#hasEmailAddress">has email address</a>
    </li>
    <li>
       <a href="#hasEndDateTime" title="http://irkb.com/ir-ontology#hasEndDateTime">has end datetime</a>
@@ -160,7 +221,11 @@ This ontology has the following classes and properties.</span>
       <a href="#hasEventId" title="http://irkb.com/ir-ontology#hasEventId">has event ID</a>
    </li>
    <li>
-      <a href="#hasHostname" title="http://irkb.com/ir-ontology#hasHostname">has hostname</a>
+      <a href="#hasEventTitle" title="http://irkb.com/ir-ontology#hasEventTitle">has event title</a>
+   </li>
+   <li>
+      <a href="#hasIncidentCreationDateTime"
+         title="http://irkb.com/ir-ontology#hasIncidentCreationDateTime">has incident creation datetime</a>
    </li>
    <li>
       <a href="#hasIncidentDescription"
@@ -176,10 +241,13 @@ This ontology has the following classes and properties.</span>
       <a href="#hasIncidentSeverity" title="http://irkb.com/ir-ontology#hasIncidentSeverity">has incident severity</a>
    </li>
    <li>
-      <a href="#hasIncidentType" title="http://irkb.com/ir-ontology#hasIncidentType">has incident type</a>
+      <a href="#hasIncidentStage" title="http://irkb.com/ir-ontology#hasIncidentStage">has incident stage</a>
    </li>
    <li>
-      <a href="#hasIpAddress" title="http://irkb.com/ir-ontology#hasIpAddress">has IP address</a>
+      <a href="#hasIncidentStatus" title="http://irkb.com/ir-ontology#hasIncidentStatus">has incident status</a>
+   </li>
+   <li>
+      <a href="#hasIncidentType" title="http://irkb.com/ir-ontology#hasIncidentType">has incident type</a>
    </li>
    <li>
       <a href="#hasSecurityAnalysisDataValue"
@@ -197,10 +265,4 @@ This ontology has the following classes and properties.</span>
       <a href="#hasSecurityAnalysisType"
          title="http://irkb.com/ir-ontology#hasSecurityAnalysisType">has security analysis type</a>
    </li>
-   <li>
-      <a href="#hasUrl" title="http://irkb.com/ir-ontology#hasUrl">has URL</a>
-   </li>
-   <li>
-      <a href="#hasUsername" title="http://irkb.com/ir-ontology#hasUsername">has username</a>
-   </li>
-</ul>
+</ul><iframe src="webvowl/index.html"></iframe> 

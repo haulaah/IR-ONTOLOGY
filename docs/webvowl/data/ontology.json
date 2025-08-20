@@ -1,0 +1,1966 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/ns/prov", "http://www.w3.org/2001/XMLSchema", "http://irkb.com/ir-ontology" ],
+    "title" : {
+      "undefined" : "Incident Response Ontology"
+    },
+    "iri" : "http://irkb.com/ir-ontology",
+    "version" : "1.0",
+    "author" : [ "Haula Galadima" ],
+    "description" : {
+      "undefined" : "A comprehensive ontology for modeling cybersecurity incident response processes"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Haula Galadima",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-06-01",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Incident Response Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "18",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "31",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "94",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#Tier3",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tier3",
+      "undefined" : "Tier 3"
+    },
+    "comment" : {
+      "undefined" : "Senior analyst or subject matter expert handling complex investigations."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#Tier2",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tier2",
+      "undefined" : "Tier 2"
+    },
+    "comment" : {
+      "undefined" : "Incident responder handling deeper investigation and analysis."
+    },
+    "id" : "3",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#Tier1",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tier1",
+      "undefined" : "Tier 1"
+    },
+    "comment" : {
+      "undefined" : "First responder performing initial triage and categorization."
+    },
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#Analyst",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Analyst",
+      "undefined" : "Analyst"
+    },
+    "subClasses" : [ "1", "3", "4" ],
+    "comment" : {
+      "undefined" : "A security analyst who investigates and responds to incidents."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#CourseOfAction",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CourseOfAction",
+      "undefined" : "Course of Action"
+    },
+    "subClasses" : [ "9", "10", "11", "12", "13" ],
+    "comment" : {
+      "undefined" : "A planned response action to a security incident."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "23" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "23", "27", "2" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "26"
+  }, {
+    "instances" : 0,
+    "union" : [ "23", "27", "2" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "18"
+  }, {
+    "instances" : 0,
+    "union" : [ "22", "23" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#SecurityAnalysis",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecurityAnalysis",
+      "undefined" : "Security Analysis"
+    },
+    "comment" : {
+      "undefined" : "The analysis of observables from security events leading to an incident conclusion."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#Incident",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Incident",
+      "undefined" : "Incident"
+    },
+    "comment" : {
+      "undefined" : "A security incident that requires investigation and response."
+    },
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "70",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "37",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "81",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "82",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#Containment",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Containment",
+      "undefined" : "Containment"
+    },
+    "comment" : {
+      "undefined" : "Actions to limit the spread and impact of an incident."
+    },
+    "id" : "10",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "72",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#Recovery",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recovery",
+      "undefined" : "Recovery"
+    },
+    "comment" : {
+      "undefined" : "Actions to restore systems to normal operation."
+    },
+    "id" : "13",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#ResponderCommunication",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ResponderCommunication",
+      "undefined" : "Responder Communication"
+    },
+    "comment" : {
+      "undefined" : "Communication between incident responders during an investigation."
+    },
+    "id" : "6"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#EventAction",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventAction",
+      "undefined" : "Event Action"
+    },
+    "comment" : {
+      "undefined" : "A specific action taken or observed within a security event."
+    },
+    "id" : "94",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#PostIncidentActivity",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PostIncidentActivity",
+      "undefined" : "Post-Incident Activity"
+    },
+    "comment" : {
+      "undefined" : "Activities conducted after incident resolution (e.g., lessons learned, reporting)."
+    },
+    "id" : "12",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#Eradication",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Eradication",
+      "undefined" : "Eradication"
+    },
+    "comment" : {
+      "undefined" : "Actions to remove threats and root causes from affected systems."
+    },
+    "id" : "9",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#Detection",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Detection",
+      "undefined" : "Detection and Analysis"
+    },
+    "comment" : {
+      "undefined" : "Activities to identify and assess security incidents."
+    },
+    "id" : "11",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#SecurityEvent",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SecurityEvent",
+      "undefined" : "Security Event"
+    },
+    "subClasses" : [ "94" ],
+    "comment" : {
+      "undefined" : "An observable occurrence relevant to system security (e.g., alert from SIEM, IDS)."
+    },
+    "id" : "23"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#Artefact",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Artefact",
+      "undefined" : "Artefact"
+    },
+    "comment" : {
+      "undefined" : "An observable piece of evidence collected from an incident (e.g., file hash, IP address, log entry)."
+    },
+    "id" : "27"
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "39",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "42",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "46",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "49",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "7",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "98",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "120",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "121",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "122",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "123",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "124",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "125",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "134",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://irkb.com/ir-ontology#hasCommunicationAuthor",
+    "inverse" : "7",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasCommunicationAuthor",
+      "undefined" : "has communication author"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Links a communication to the analyst who authored it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasAssociatedWith",
+    "inverse" : "20",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "wasAssociatedWith",
+      "undefined" : "was associated with"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "Indicates association with an incident"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasSecurityAnalysisDetails",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "hasSecurityAnalysisDetails",
+      "undefined" : "has security analysis details"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Detailed findings and conclusions from the analysis."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasAnalysisPerformingAnalyst",
+    "inverse" : "33",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasAnalysisPerformingAnalyst",
+      "undefined" : "has analysis performing analyst"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Links a security analysis to the analyst who performed it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "hasSecurityAnalysisDateTime",
+      "undefined" : "has security analysis datetime"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Timestamp when the security analysis was performed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasIncidentName",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasIncidentName",
+      "undefined" : "has incident name"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Title of the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#createdCoa",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "createdCoa",
+      "undefined" : "created COA"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Inverse of hasCoaCreationAnalyst. Links an analyst to the courses of action they created."
+    },
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#createdArtefact",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "createdArtefact",
+      "undefined" : "created artefact"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Inverse of hasArtefactCreationAnalyst. Links an analyst to the artefacts they created."
+    },
+    "attributes" : [ "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasCoaStatus",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hasCoaStatus",
+      "undefined" : "has COA status"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Current execution status of the course of action (e.g., Planned, In Progress, Completed, Failed)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#isAnalysisOf",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isAnalysisOf",
+      "undefined" : "is analysis of"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Inverse of hasAnalysis. Links an analysis back to its incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#generated",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "generated",
+      "undefined" : "generated"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Inverse of prov:wasGeneratedBy. Indicates a security event generated an analysis."
+    },
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#isCoaOf",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isCoaOf",
+      "undefined" : "is COA of"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Inverse of hasCoa. Links a course of action back to its incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "44"
+  }, {
+    "range" : "22",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasCoaCreationDateTime",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "hasCoaCreationDateTime",
+      "undefined" : "has COA creation datetime"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Timestamp when the course of action was created."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "46"
+  }, {
+    "range" : "23",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "23",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "range" : "23",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
+  }, {
+    "range" : "22",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#authoredCommunication",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "authoredCommunication",
+      "undefined" : "authored communication"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Inverse of hasCommunicationAuthor. Links an analyst to the communications they authored."
+    },
+    "attributes" : [ "object" ],
+    "id" : "7"
+  }, {
+    "range" : "22",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasCoaDescription",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasCoaDescription",
+      "undefined" : "has COA description"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Narrative description of the course of action and its intended effect."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasConfirmationDateTime",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasConfirmationDateTime",
+      "undefined" : "has confirmation datetime"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Timestamp when the incident was confirmed as genuine."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "range" : "6",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "23",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "6",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "19",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#assignedToCoa",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "assignedToCoa",
+      "undefined" : "assigned to COA"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Inverse of hasCoaAssignedAnalyst. Links an analyst to the courses of action they are assigned to execute."
+    },
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasPertainingCommunication",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasPertainingCommunication",
+      "undefined" : "has pertaining communication"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Inverse of pertainsToIncident. Links an incident to communications about it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasAnalystId",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "hasAnalystId",
+      "undefined" : "has analyst ID"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Unique identifier for an analyst (e.g., employee ID)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasCoaEndDateTime",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "hasCoaEndDateTime",
+      "undefined" : "has COA end datetime"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Timestamp when execution of the course of action was completed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasIncidentSeverity",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "70",
+    "label" : {
+      "IRI-based" : "hasIncidentSeverity",
+      "undefined" : "has incident severity"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "The severity level of an incident (e.g., Low, Medium, High, Critical)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasEndDateTime",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "hasEndDateTime",
+      "undefined" : "has end datetime"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Timestamp when incident response was formally concluded."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasChatSentiment",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "hasChatSentiment",
+      "undefined" : "has chat sentiment"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The sentiment or tone of the communication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#confirmedIncident",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "confirmedIncident",
+      "undefined" : "confirmed incident"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Inverse of hasConfirmationAnalyst. Links an analyst to the incidents they confirmed."
+    },
+    "attributes" : [ "object" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasAnalystEmail",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasAnalystEmail",
+      "undefined" : "has analyst email"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Email address of the analyst."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasCoaCreationAnalyst",
+    "inverse" : "38",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasCoaCreationAnalyst",
+      "undefined" : "has COA creation analyst"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Links a course of action to the analyst who created or planned it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasIncidentCreationDateTime",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "hasIncidentCreationDateTime",
+      "undefined" : "has incident creation datetime"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Timestamp when the incident record was first created."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasAnalysis",
+    "inverse" : "42",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasAnalysis",
+      "undefined" : "has analysis"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Links an incident to the security analyses performed on it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasChatMessage",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "hasChatMessage",
+      "undefined" : "has chat message"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "The content or body of the communication message."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasEventDescription",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "hasEventDescription",
+      "undefined" : "has event description"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Detailed description of the security event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasArtefactCreationDateTime",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "hasArtefactCreationDateTime",
+      "undefined" : "has artefact creation datetime"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Timestamp when the artefact was created, collected, or observed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasEventActivity",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "82",
+    "label" : {
+      "IRI-based" : "hasEventActivity",
+      "undefined" : "has event activity"
+    },
+    "domain" : "94",
+    "comment" : {
+      "undefined" : "Description of the specific activity within a security event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#isEventOf",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isEventOf",
+      "undefined" : "is event of"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Inverse of hasEvent. Links a security event back to its parent incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#used",
+    "inverse" : "97",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "used",
+      "undefined" : "used"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Indicates that a course of action used specific analysis"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#wasUsedBy",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "wasUsedBy",
+      "undefined" : "was used by"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Inverse of prov:used. Indicates an analysis was used by a course of action."
+    },
+    "attributes" : [ "object" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasEvent",
+    "inverse" : "95",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasEvent",
+      "undefined" : "has event"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Links an incident to one or more related security events that triggered or are part of it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "98"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hadAssociatedEntity",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hadAssociatedEntity",
+      "undefined" : "had associated entity"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Inverse of prov:wasAssociatedWith. Indicates an incident had an associated entity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasCoaStartDateTime",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "hasCoaStartDateTime",
+      "undefined" : "has COA start datetime"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Timestamp when execution of the course of action was initiated."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasArtefactType",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hasArtefactType",
+      "undefined" : "has artefact type"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Classification of the artefact (e.g., FileHash, IPAddress, URL, UserAgent)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#pertainsToIncident",
+    "inverse" : "63",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "pertainsToIncident",
+      "undefined" : "pertains to incident"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Links a communication to the incident it discusses."
+    },
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasSecurityAnalysisType",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "hasSecurityAnalysisType",
+      "undefined" : "has security analysis type"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "The type of analysis performed (e.g., Malware Analysis, Network Analysis, Timeline Analysis)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "range" : "23",
+    "domain" : "94",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "104"
+  }, {
+    "range" : "8",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "8",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "8",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "8",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasChatMessageDateTime",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "hasChatMessageDateTime",
+      "undefined" : "has chat message datetime"
+    },
+    "domain" : "6",
+    "comment" : {
+      "undefined" : "Timestamp when the communication occurred."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "range" : "2",
+    "domain" : "3",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "111"
+  }, {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "112"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#isArtefactOf",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isArtefactOf",
+      "undefined" : "is artefact of"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Inverse of hasArtefact. Links an artefact back to its incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasConfirmationAnalyst",
+    "inverse" : "83",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasConfirmationAnalyst",
+      "undefined" : "has confirmation analyst"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Links an incident to the analyst who confirmed it as a genuine security incident."
+    },
+    "attributes" : [ "object" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasGeneratedBy",
+    "inverse" : "43",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "wasGeneratedBy",
+      "undefined" : "was generated by"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Indicates the security event that generated this analysis"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasArtefactCreationAnalyst",
+    "inverse" : "39",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasArtefactCreationAnalyst",
+      "undefined" : "has artefact creation analyst"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "Links an artefact to the analyst who collected, created, or documented it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "range" : "19",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "6",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "range" : "22",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "121"
+  }, {
+    "range" : "23",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "8",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "19",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "6",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasIncidentDescription",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "hasIncidentDescription",
+      "undefined" : "has incident description"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Detailed description of an incident's nature, impact, and scope."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasArtefactDataValue",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "hasArtefactDataValue",
+      "undefined" : "has artefact data value"
+    },
+    "domain" : "27",
+    "comment" : {
+      "undefined" : "The actual content or value of the artefact (e.g., \"192.0.2.1\", \"a1b2c3d4e5...\")."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "127"
+  }, {
+    "range" : "22",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasEventTitle",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "hasEventTitle",
+      "undefined" : "has event title"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Short title or name for the security event."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "129"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasCoaAssignedAnalyst",
+    "inverse" : "62",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasCoaAssignedAnalyst",
+      "undefined" : "has COA assigned analyst"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "Links a course of action to the analyst responsible for executing it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "130"
+  }, {
+    "range" : "27",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasCoa",
+    "inverse" : "44",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasCoa",
+      "undefined" : "has course of action"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Links an incident to the response actions (COA) taken to resolve it."
+    },
+    "attributes" : [ "object" ],
+    "id" : "132"
+  }, {
+    "range" : "8",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://www.w3.org/ns/prov#wasPerformedBy",
+    "inverse" : "135",
+    "baseIri" : "http://www.w3.org/ns/prov",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "wasPerformedBy",
+      "undefined" : "was performed by"
+    },
+    "domain" : "21",
+    "comment" : {
+      "undefined" : "Indicates the analyst who performed this activity"
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasIncidentStatus",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "hasIncidentStatus",
+      "undefined" : "has incident status"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Current status of the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasEventId",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "hasEventId",
+      "undefined" : "has event ID"
+    },
+    "domain" : "23",
+    "comment" : {
+      "undefined" : "Unique identifier for a security event (e.g., from SIEM or IDS)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasIncidentId",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "hasIncidentId",
+      "undefined" : "has incident ID"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Unique identifier for an incident (e.g., INC-2025-001)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#performedAnalysis",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "performedAnalysis",
+      "undefined" : "performed analysis"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Inverse of hasAnalysisPerformingAnalyst. Links an analyst to the analyses they performed."
+    },
+    "attributes" : [ "object" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasIncidentStage",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "hasIncidentStage",
+      "undefined" : "has incident stage"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Current stage in the incident lifecycle."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "hasSecurityAnalysisDataValue",
+      "undefined" : "has security analysis data value"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "The data value resulting from analysis (e.g., \"C2 Server IP\", \"Malware Family Name\")."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "140"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasEventActivityDateTime",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "81",
+    "label" : {
+      "IRI-based" : "hasEventActivityDateTime",
+      "undefined" : "has event activity datetime"
+    },
+    "domain" : "94",
+    "comment" : {
+      "undefined" : "Timestamp when the specific security event activity occurred."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasIncidentType",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "hasIncidentType",
+      "undefined" : "has incident type"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Classification of the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#performed",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "performed",
+      "undefined" : "performed"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Inverse of prov:wasPerformedBy. Indicates an analyst performed an activity."
+    },
+    "attributes" : [ "object" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasArtefact",
+    "inverse" : "115",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "hasArtefact",
+      "undefined" : "has artefact"
+    },
+    "domain" : "19",
+    "comment" : {
+      "undefined" : "Links an incident to related artefacts (evidence) collected during the investigation."
+    },
+    "attributes" : [ "object" ],
+    "id" : "143"
+  } ]
+}
