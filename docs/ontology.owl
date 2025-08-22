@@ -697,7 +697,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventActivity">
-        <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#EventAction"/>
+        <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityEventAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Description of the specific activity within a security event.</rdfs:comment>
         <rdfs:label>has event activity</rdfs:label>
@@ -709,7 +709,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventActivityDateTime">
-        <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#EventAction"/>
+        <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityEventAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment>Timestamp when the specific security event activity occurred.</rdfs:comment>
         <rdfs:label>has event activity datetime</rdfs:label>
@@ -721,7 +721,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://irkb.com/ir-ontology#hasEventDescription">
-        <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
+        <rdfs:domain rdf:resource="http://irkb.com/ir-ontology#SecurityEventAction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment>Detailed description of the security event.</rdfs:comment>
         <rdfs:label>has event description</rdfs:label>
@@ -909,6 +909,17 @@
     
 
 
+    <!-- http://irkb.com/ir-ontology#Analysis -->
+
+
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#Analysis">
+        <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
+        <rdfs:comment>Activities to assess security incidents.</rdfs:comment>
+        <rdfs:label>Detection and Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://irkb.com/ir-ontology#Analyst -->
 
 
@@ -955,7 +966,7 @@
 
     <owl:Class rdf:about="http://irkb.com/ir-ontology#Detection">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
-        <rdfs:comment>Activities to identify and assess security incidents.</rdfs:comment>
+        <rdfs:comment>Activities in detection of security incidents.</rdfs:comment>
         <rdfs:label>Detection and Analysis</rdfs:label>
     </owl:Class>
     
@@ -968,17 +979,6 @@
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
         <rdfs:comment>Actions to remove threats and root causes from affected systems.</rdfs:comment>
         <rdfs:label>Eradication</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://irkb.com/ir-ontology#EventAction -->
-
-
-    <owl:Class rdf:about="http://irkb.com/ir-ontology#EventAction">
-        <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
-        <rdfs:comment>A specific action taken or observed within a security event.</rdfs:comment>
-        <rdfs:label>Event Action</rdfs:label>
     </owl:Class>
     
 
@@ -1041,6 +1041,17 @@
     <owl:Class rdf:about="http://irkb.com/ir-ontology#SecurityEvent">
         <rdfs:comment>An observable occurrence relevant to system security (e.g., alert from SIEM, IDS).</rdfs:comment>
         <rdfs:label>Security Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://irkb.com/ir-ontology#SecurityEventAction -->
+
+
+    <owl:Class rdf:about="http://irkb.com/ir-ontology#SecurityEventAction">
+        <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#SecurityEvent"/>
+        <rdfs:comment>A specific action taken or observed within a security event.</rdfs:comment>
+        <rdfs:label>Event Action</rdfs:label>
     </owl:Class>
     
 

@@ -7,9 +7,10 @@ This section provides details for each class and property defined by Incident Re
   <li><a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a></li>
   <li><a href="#Containment" title="http://irkb.com/ir-ontology#Containment">Containment</a></li>
   <li><a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a></li>
+  <li><a href="#Analysis" title="http://irkb.com/ir-ontology#Analysis">Detection and Analysis</a></li>
   <li><a href="#Detection" title="http://irkb.com/ir-ontology#Detection">Detection and Analysis</a></li>
   <li><a href="#Eradication" title="http://irkb.com/ir-ontology#Eradication">Eradication</a></li>
-  <li><a href="#EventAction" title="http://irkb.com/ir-ontology#EventAction">Event Action</a></li>
+  <li><a href="#SecurityEventAction" title="http://irkb.com/ir-ontology#SecurityEventAction">Event Action</a></li>
   <li><a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a></li>
   <li><a href="#PostIncidentActivity" title="http://irkb.com/ir-ontology#PostIncidentActivity">Post-Incident Activity</a></li>
   <li><a href="#Recovery" title="http://irkb.com/ir-ontology#Recovery">Recovery</a></li>
@@ -106,7 +107,7 @@ This section provides details for each class and property defined by Incident Re
     has sub-classes
    </dt>
    <dd>
-    <a href="#Containment" title="http://irkb.com/ir-ontology#Containment">Containment</a> <sup class="type-c" title="class">c</sup>, <a href="#Detection" title="http://irkb.com/ir-ontology#Detection">Detection and Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#Eradication" title="http://irkb.com/ir-ontology#Eradication">Eradication</a> <sup class="type-c" title="class">c</sup>, <a href="#PostIncidentActivity" title="http://irkb.com/ir-ontology#PostIncidentActivity">Post-Incident Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Recovery" title="http://irkb.com/ir-ontology#Recovery">Recovery</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Containment" title="http://irkb.com/ir-ontology#Containment">Containment</a> <sup class="type-c" title="class">c</sup>, <a href="#Analysis" title="http://irkb.com/ir-ontology#Analysis">Detection and Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#Detection" title="http://irkb.com/ir-ontology#Detection">Detection and Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#Eradication" title="http://irkb.com/ir-ontology#Eradication">Eradication</a> <sup class="type-c" title="class">c</sup>, <a href="#PostIncidentActivity" title="http://irkb.com/ir-ontology#PostIncidentActivity">Post-Incident Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Recovery" title="http://irkb.com/ir-ontology#Recovery">Recovery</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
@@ -128,11 +129,26 @@ This section provides details for each class and property defined by Incident Re
    </dd>
   </dl>
  </div>
+ <div class="entity" id="Analysis">
+  <h3>Detection and Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Analysis</p>
+  <div class="comment">
+   <span class="markdown">Activities to assess security incidents.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Detection">
   <h3>Detection and Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Detection</p>
   <div class="comment">
-   <span class="markdown">Activities to identify and assess security incidents.</span>
+   <span class="markdown">Activities in detection of security incidents.</span>
   </div>
   <dl class="description">
    <dt>
@@ -158,9 +174,9 @@ This section provides details for each class and property defined by Incident Re
    </dd>
   </dl>
  </div>
- <div class="entity" id="EventAction">
+ <div class="entity" id="SecurityEventAction">
   <h3>Event Action<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#EventAction</p>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#SecurityEventAction</p>
   <div class="comment">
    <span class="markdown">A specific action taken or observed within a security event.</span>
   </div>
@@ -175,7 +191,7 @@ This section provides details for each class and property defined by Incident Re
     is in domain of
    </dt>
    <dd>
-    <a href="#hasEventActivity" title="http://irkb.com/ir-ontology#hasEventActivity">has event activity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventActivityDateTime" title="http://irkb.com/ir-ontology#hasEventActivityDateTime">has event activity datetime</a> <sup class="type-dp" title="data property">dp</sup>
+    <a href="#hasEventActivity" title="http://irkb.com/ir-ontology#hasEventActivity">has event activity</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventActivityDateTime" title="http://irkb.com/ir-ontology#hasEventActivityDateTime">has event activity datetime</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventDescription" title="http://irkb.com/ir-ontology#hasEventDescription">has event description</a> <sup class="type-dp" title="data property">dp</sup>
    </dd>
   </dl>
  </div>
@@ -301,13 +317,13 @@ This section provides details for each class and property defined by Incident Re
     has sub-classes
    </dt>
    <dd>
-    <a href="#EventAction" title="http://irkb.com/ir-ontology#EventAction">Event Action</a> <sup class="type-c" title="class">c</sup>
+    <a href="#SecurityEventAction" title="http://irkb.com/ir-ontology#SecurityEventAction">Event Action</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
    </dt>
    <dd>
-    <a href="#generated" title="http://irkb.com/ir-ontology#generated">generated</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEventId" title="http://irkb.com/ir-ontology#hasEventId">has event ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventDescription" title="http://irkb.com/ir-ontology#hasEventDescription">has event description</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventTitle" title="http://irkb.com/ir-ontology#hasEventTitle">has event title</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isEventOf" title="http://irkb.com/ir-ontology#isEventOf">is event of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#generated" title="http://irkb.com/ir-ontology#generated">generated</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasEventId" title="http://irkb.com/ir-ontology#hasEventId">has event ID</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#hasEventTitle" title="http://irkb.com/ir-ontology#hasEventTitle">has event title</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#isEventOf" title="http://irkb.com/ir-ontology#isEventOf">is event of</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasAssociatedWith" title="http://www.w3.org/ns/prov#wasAssociatedWith">was associated with</a> <sup class="type-op" title="object property">op</sup>, <a href="#http://www.w3.org/ns/prov#wasPerformedBy" title="http://www.w3.org/ns/prov#wasPerformedBy">was performed by</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>
     is in range of
@@ -1665,7 +1681,7 @@ This section provides details for each class and property defined by Incident Re
      has domain
     </dt>
     <dd>
-     <a href="#EventAction" title="http://irkb.com/ir-ontology#EventAction">Event Action</a> <sup class="type-c" title="class">c</sup>
+     <a href="#SecurityEventAction" title="http://irkb.com/ir-ontology#SecurityEventAction">Event Action</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1688,7 +1704,7 @@ This section provides details for each class and property defined by Incident Re
      has domain
     </dt>
     <dd>
-     <a href="#EventAction" title="http://irkb.com/ir-ontology#EventAction">Event Action</a> <sup class="type-c" title="class">c</sup>
+     <a href="#SecurityEventAction" title="http://irkb.com/ir-ontology#SecurityEventAction">Event Action</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range
@@ -1711,7 +1727,7 @@ This section provides details for each class and property defined by Incident Re
      has domain
     </dt>
     <dd>
-     <a href="#SecurityEvent" title="http://irkb.com/ir-ontology#SecurityEvent">Security Event</a> <sup class="type-c" title="class">c</sup>
+     <a href="#SecurityEventAction" title="http://irkb.com/ir-ontology#SecurityEventAction">Event Action</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>
      has range

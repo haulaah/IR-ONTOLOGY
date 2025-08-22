@@ -429,21 +429,21 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://irkb.com/ir-ontology#hasEventActivity
 <http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#EventAction> .
+<http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEventAction> .
 <http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the specific activity within a security event." .
 <http://irkb.com/ir-ontology#hasEventActivity> <http://www.w3.org/2000/01/rdf-schema#label> "has event activity" .
 # 
 # http://irkb.com/ir-ontology#hasEventActivityDateTime
 <http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#EventAction> .
+<http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEventAction> .
 <http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
 <http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the specific security event activity occurred." .
 <http://irkb.com/ir-ontology#hasEventActivityDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has event activity datetime" .
 # 
 # http://irkb.com/ir-ontology#hasEventDescription
 <http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEventAction> .
 <http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of the security event." .
 <http://irkb.com/ir-ontology#hasEventDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has event description" .
@@ -555,6 +555,12 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # #################################################################
 # 
 # 
+# http://irkb.com/ir-ontology#Analysis
+<http://irkb.com/ir-ontology#Analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#Analysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
+<http://irkb.com/ir-ontology#Analysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities to assess security incidents." .
+<http://irkb.com/ir-ontology#Analysis> <http://www.w3.org/2000/01/rdf-schema#label> "Detection and Analysis" .
+# 
 # http://irkb.com/ir-ontology#Analyst
 <http://irkb.com/ir-ontology#Analyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Analyst> <http://www.w3.org/2000/01/rdf-schema#comment> "A security analyst who investigates and responds to incidents." .
@@ -579,7 +585,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # http://irkb.com/ir-ontology#Detection
 <http://irkb.com/ir-ontology#Detection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Detection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
-<http://irkb.com/ir-ontology#Detection> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities to identify and assess security incidents." .
+<http://irkb.com/ir-ontology#Detection> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities in detection of security incidents." .
 <http://irkb.com/ir-ontology#Detection> <http://www.w3.org/2000/01/rdf-schema#label> "Detection and Analysis" .
 # 
 # http://irkb.com/ir-ontology#Eradication
@@ -587,12 +593,6 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#Eradication> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
 <http://irkb.com/ir-ontology#Eradication> <http://www.w3.org/2000/01/rdf-schema#comment> "Actions to remove threats and root causes from affected systems." .
 <http://irkb.com/ir-ontology#Eradication> <http://www.w3.org/2000/01/rdf-schema#label> "Eradication" .
-# 
-# http://irkb.com/ir-ontology#EventAction
-<http://irkb.com/ir-ontology#EventAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://irkb.com/ir-ontology#EventAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#SecurityEvent> .
-<http://irkb.com/ir-ontology#EventAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific action taken or observed within a security event." .
-<http://irkb.com/ir-ontology#EventAction> <http://www.w3.org/2000/01/rdf-schema#label> "Event Action" .
 # 
 # http://irkb.com/ir-ontology#Incident
 <http://irkb.com/ir-ontology#Incident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -625,6 +625,12 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#SecurityEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#SecurityEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable occurrence relevant to system security (e.g., alert from SIEM, IDS)." .
 <http://irkb.com/ir-ontology#SecurityEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Security Event" .
+# 
+# http://irkb.com/ir-ontology#SecurityEventAction
+<http://irkb.com/ir-ontology#SecurityEventAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://irkb.com/ir-ontology#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#SecurityEvent> .
+<http://irkb.com/ir-ontology#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific action taken or observed within a security event." .
+<http://irkb.com/ir-ontology#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#label> "Event Action" .
 # 
 # http://irkb.com/ir-ontology#Tier1
 <http://irkb.com/ir-ontology#Tier1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

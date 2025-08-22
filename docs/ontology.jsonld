@@ -85,6 +85,18 @@
     "@value" : "1.0"
   } ]
 }, {
+  "@id" : "http://irkb.com/ir-ontology#Analysis",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Activities to assess security incidents."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Detection and Analysis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://irkb.com/ir-ontology#CourseOfAction"
+  } ]
+}, {
   "@id" : "http://irkb.com/ir-ontology#Analyst",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -127,7 +139,7 @@
   "@id" : "http://irkb.com/ir-ontology#Detection",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Activities to identify and assess security incidents."
+    "@value" : "Activities in detection of security incidents."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Detection and Analysis"
@@ -146,18 +158,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://irkb.com/ir-ontology#CourseOfAction"
-  } ]
-}, {
-  "@id" : "http://irkb.com/ir-ontology#EventAction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "A specific action taken or observed within a security event."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Event Action"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://irkb.com/ir-ontology#SecurityEvent"
   } ]
 }, {
   "@id" : "http://irkb.com/ir-ontology#Incident",
@@ -218,6 +218,18 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Security Event"
+  } ]
+}, {
+  "@id" : "http://irkb.com/ir-ontology#SecurityEventAction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A specific action taken or observed within a security event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Event Action"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://irkb.com/ir-ontology#SecurityEvent"
   } ]
 }, {
   "@id" : "http://irkb.com/ir-ontology#Tier1",
@@ -772,7 +784,7 @@
     "@value" : "Description of the specific activity within a security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://irkb.com/ir-ontology#EventAction"
+    "@id" : "http://irkb.com/ir-ontology#SecurityEventAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event activity"
@@ -787,7 +799,7 @@
     "@value" : "Timestamp when the specific security event activity occurred."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://irkb.com/ir-ontology#EventAction"
+    "@id" : "http://irkb.com/ir-ontology#SecurityEventAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event activity datetime"
@@ -802,7 +814,7 @@
     "@value" : "Detailed description of the security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://irkb.com/ir-ontology#SecurityEvent"
+    "@id" : "http://irkb.com/ir-ontology#SecurityEventAction"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "has event description"
