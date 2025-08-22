@@ -559,7 +559,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#Analysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Analysis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
 <http://irkb.com/ir-ontology#Analysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities to assess security incidents." .
-<http://irkb.com/ir-ontology#Analysis> <http://www.w3.org/2000/01/rdf-schema#label> "Detection and Analysis" .
+<http://irkb.com/ir-ontology#Analysis> <http://www.w3.org/2000/01/rdf-schema#label> "Analysis" .
 # 
 # http://irkb.com/ir-ontology#Analyst
 <http://irkb.com/ir-ontology#Analyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -586,7 +586,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#Detection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#Detection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#CourseOfAction> .
 <http://irkb.com/ir-ontology#Detection> <http://www.w3.org/2000/01/rdf-schema#comment> "Activities in detection of security incidents." .
-<http://irkb.com/ir-ontology#Detection> <http://www.w3.org/2000/01/rdf-schema#label> "Detection and Analysis" .
+<http://irkb.com/ir-ontology#Detection> <http://www.w3.org/2000/01/rdf-schema#label> "Detection" .
 # 
 # http://irkb.com/ir-ontology#Eradication
 <http://irkb.com/ir-ontology#Eradication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

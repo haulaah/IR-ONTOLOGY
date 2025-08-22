@@ -591,7 +591,7 @@ xsd:date rdf:type rdfs:Datatype .
 :Analysis rdf:type owl:Class ;
           rdfs:subClassOf :CourseOfAction ;
           rdfs:comment "Activities to assess security incidents." ;
-          rdfs:label "Detection and Analysis" .
+          rdfs:label "Analysis" .
 
 
 ###  http://irkb.com/ir-ontology#Analyst
@@ -623,7 +623,7 @@ xsd:date rdf:type rdfs:Datatype .
 :Detection rdf:type owl:Class ;
            rdfs:subClassOf :CourseOfAction ;
            rdfs:comment "Activities in detection of security incidents." ;
-           rdfs:label "Detection and Analysis" .
+           rdfs:label "Detection" .
 
 
 ###  http://irkb.com/ir-ontology#Eradication

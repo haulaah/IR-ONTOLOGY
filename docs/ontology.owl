@@ -915,7 +915,7 @@
     <owl:Class rdf:about="http://irkb.com/ir-ontology#Analysis">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
         <rdfs:comment>Activities to assess security incidents.</rdfs:comment>
-        <rdfs:label>Detection and Analysis</rdfs:label>
+        <rdfs:label>Analysis</rdfs:label>
     </owl:Class>
     
 
@@ -967,7 +967,7 @@
     <owl:Class rdf:about="http://irkb.com/ir-ontology#Detection">
         <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
         <rdfs:comment>Activities in detection of security incidents.</rdfs:comment>
-        <rdfs:label>Detection and Analysis</rdfs:label>
+        <rdfs:label>Detection</rdfs:label>
     </owl:Class>
     
 

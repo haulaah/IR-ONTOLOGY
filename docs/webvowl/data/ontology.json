@@ -315,7 +315,7 @@
   }, {
     "instances" : 0,
     "union" : [ "25", "4" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "24"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
@@ -334,17 +334,17 @@
   }, {
     "instances" : 0,
     "union" : [ "4", "29", "2" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "28"
   }, {
     "instances" : 0,
     "union" : [ "4", "29", "2" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "21"
   }, {
     "instances" : 0,
     "union" : [ "25", "4" ],
-    "attributes" : [ "union", "anonymous" ],
+    "attributes" : [ "anonymous", "union" ],
     "id" : "33"
   }, {
     "iri" : "http://irkb.com/ir-ontology#SecurityAnalysis",
@@ -581,7 +581,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "Analysis",
-      "undefined" : "Detection and Analysis"
+      "undefined" : "Analysis"
     },
     "comment" : {
       "undefined" : "Activities to assess security incidents."
@@ -607,7 +607,7 @@
     "instances" : 0,
     "label" : {
       "IRI-based" : "Detection",
-      "undefined" : "Detection and Analysis"
+      "undefined" : "Detection"
     },
     "comment" : {
       "undefined" : "Activities in detection of security incidents."
@@ -939,11 +939,11 @@
     "id" : "143",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "144",
-    "type" : "owl:datatypeProperty"
-  }, {
     "id" : "137",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "145",
     "type" : "owl:objectProperty"
@@ -976,7 +976,7 @@
     "comment" : {
       "undefined" : "Indicates association with an incident"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "20"
   }, {
     "range" : "4",
@@ -1483,7 +1483,7 @@
     "comment" : {
       "undefined" : "Indicates that a course of action used specific analysis"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "97"
   }, {
     "iri" : "http://irkb.com/ir-ontology#wasUsedBy",
@@ -1691,7 +1691,7 @@
     "comment" : {
       "undefined" : "Indicates the security event that generated this analysis"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "119"
   }, {
     "iri" : "http://irkb.com/ir-ontology#hasArtefactCreationAnalyst",
@@ -1843,7 +1843,7 @@
     "comment" : {
       "undefined" : "Indicates the analyst who performed this activity"
     },
-    "attributes" : [ "external", "object" ],
+    "attributes" : [ "object", "external" ],
     "id" : "136"
   }, {
     "iri" : "http://irkb.com/ir-ontology#hasIncidentStatus",
@@ -1944,20 +1944,6 @@
     "attributes" : [ "datatype" ],
     "id" : "143"
   }, {
-    "iri" : "http://irkb.com/ir-ontology#hasIncidentType",
-    "baseIri" : "http://irkb.com/ir-ontology",
-    "range" : "66",
-    "label" : {
-      "IRI-based" : "hasIncidentType",
-      "undefined" : "has incident type"
-    },
-    "domain" : "22",
-    "comment" : {
-      "undefined" : "Classification of the incident."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "144"
-  }, {
     "iri" : "http://irkb.com/ir-ontology#performed",
     "baseIri" : "http://irkb.com/ir-ontology",
     "range" : "33",
@@ -1971,6 +1957,20 @@
     },
     "attributes" : [ "object" ],
     "id" : "137"
+  }, {
+    "iri" : "http://irkb.com/ir-ontology#hasIncidentType",
+    "baseIri" : "http://irkb.com/ir-ontology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasIncidentType",
+      "undefined" : "has incident type"
+    },
+    "domain" : "22",
+    "comment" : {
+      "undefined" : "Classification of the incident."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "144"
   }, {
     "iri" : "http://irkb.com/ir-ontology#hasArtefact",
     "inverse" : "117",

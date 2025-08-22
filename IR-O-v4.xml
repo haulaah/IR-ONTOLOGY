@@ -43,14 +43,14 @@
   <!-- Detection is the initial phase of identifying security incidents. -->
   <owl:Class rdf:about="http://irkb.com/ir-ontology#Detection">
     <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
-    <rdfs:label>Detection and Analysis</rdfs:label>
+    <rdfs:label>Detection</rdfs:label>
     <rdfs:comment>Activities in detection of security incidents.</rdfs:comment>
   </owl:Class>
 
  <!-- Analysis of security incidents. -->
   <owl:Class rdf:about="http://irkb.com/ir-ontology#Analysis">
     <rdfs:subClassOf rdf:resource="http://irkb.com/ir-ontology#CourseOfAction"/>
-    <rdfs:label>Detection and Analysis</rdfs:label>
+    <rdfs:label>Analysis</rdfs:label>
     <rdfs:comment>Activities to assess security incidents.</rdfs:comment>
   </owl:Class>
 

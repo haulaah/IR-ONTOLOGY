@@ -3,12 +3,12 @@ This section provides details for each class and property defined by Incident Re
 <div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
  <h3 id="classes-headline" class="list">Classes</h3>
  <ul class="hlist">
+  <li><a href="#Analysis" title="http://irkb.com/ir-ontology#Analysis">Analysis</a></li>
   <li><a href="#Analyst" title="http://irkb.com/ir-ontology#Analyst">Analyst</a></li>
   <li><a href="#Artefact" title="http://irkb.com/ir-ontology#Artefact">Artefact</a></li>
   <li><a href="#Containment" title="http://irkb.com/ir-ontology#Containment">Containment</a></li>
   <li><a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a></li>
-  <li><a href="#Analysis" title="http://irkb.com/ir-ontology#Analysis">Detection and Analysis</a></li>
-  <li><a href="#Detection" title="http://irkb.com/ir-ontology#Detection">Detection and Analysis</a></li>
+  <li><a href="#Detection" title="http://irkb.com/ir-ontology#Detection">Detection</a></li>
   <li><a href="#Eradication" title="http://irkb.com/ir-ontology#Eradication">Eradication</a></li>
   <li><a href="#SecurityEventAction" title="http://irkb.com/ir-ontology#SecurityEventAction">Event Action</a></li>
   <li><a href="#Incident" title="http://irkb.com/ir-ontology#Incident">Incident</a></li>
@@ -21,6 +21,21 @@ This section provides details for each class and property defined by Incident Re
   <li><a href="#Tier2" title="http://irkb.com/ir-ontology#Tier2">Tier 2</a></li>
   <li><a href="#Tier3" title="http://irkb.com/ir-ontology#Tier3">Tier 3</a></li>
  </ul>
+ <div class="entity" id="Analysis">
+  <h3>Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Analysis</p>
+  <div class="comment">
+   <span class="markdown">Activities to assess security incidents.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="Analyst">
   <h3>Analyst<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Analyst</p>
@@ -107,7 +122,7 @@ This section provides details for each class and property defined by Incident Re
     has sub-classes
    </dt>
    <dd>
-    <a href="#Containment" title="http://irkb.com/ir-ontology#Containment">Containment</a> <sup class="type-c" title="class">c</sup>, <a href="#Analysis" title="http://irkb.com/ir-ontology#Analysis">Detection and Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#Detection" title="http://irkb.com/ir-ontology#Detection">Detection and Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#Eradication" title="http://irkb.com/ir-ontology#Eradication">Eradication</a> <sup class="type-c" title="class">c</sup>, <a href="#PostIncidentActivity" title="http://irkb.com/ir-ontology#PostIncidentActivity">Post-Incident Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Recovery" title="http://irkb.com/ir-ontology#Recovery">Recovery</a> <sup class="type-c" title="class">c</sup>
+    <a href="#Analysis" title="http://irkb.com/ir-ontology#Analysis">Analysis</a> <sup class="type-c" title="class">c</sup>, <a href="#Containment" title="http://irkb.com/ir-ontology#Containment">Containment</a> <sup class="type-c" title="class">c</sup>, <a href="#Detection" title="http://irkb.com/ir-ontology#Detection">Detection</a> <sup class="type-c" title="class">c</sup>, <a href="#Eradication" title="http://irkb.com/ir-ontology#Eradication">Eradication</a> <sup class="type-c" title="class">c</sup>, <a href="#PostIncidentActivity" title="http://irkb.com/ir-ontology#PostIncidentActivity">Post-Incident Activity</a> <sup class="type-c" title="class">c</sup>, <a href="#Recovery" title="http://irkb.com/ir-ontology#Recovery">Recovery</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
@@ -129,23 +144,8 @@ This section provides details for each class and property defined by Incident Re
    </dd>
   </dl>
  </div>
- <div class="entity" id="Analysis">
-  <h3>Detection and Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
-  <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Analysis</p>
-  <div class="comment">
-   <span class="markdown">Activities to assess security incidents.</span>
-  </div>
-  <dl class="description">
-   <dt>
-    has super-classes
-   </dt>
-   <dd>
-    <a href="#CourseOfAction" title="http://irkb.com/ir-ontology#CourseOfAction">Course of Action</a> <sup class="type-c" title="class">c</sup>
-   </dd>
-  </dl>
- </div>
  <div class="entity" id="Detection">
-  <h3>Detection and Analysis<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <h3>Detection<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://irkb.com/ir-ontology#Detection</p>
   <div class="comment">
    <span class="markdown">Activities in detection of security incidents.</span>

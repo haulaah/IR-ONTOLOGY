@@ -91,7 +91,7 @@
     "@value" : "Activities to assess security incidents."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Detection and Analysis"
+    "@value" : "Analysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://irkb.com/ir-ontology#CourseOfAction"
@@ -142,7 +142,7 @@
     "@value" : "Activities in detection of security incidents."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Detection and Analysis"
+    "@value" : "Detection"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://irkb.com/ir-ontology#CourseOfAction"
