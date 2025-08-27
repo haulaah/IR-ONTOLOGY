@@ -1,7 +1,7 @@
 <http://irkb.com/ir-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://irkb.com/ir-ontology> <http://purl.org/dc/terms/created> "2025-06-01"^^<http://www.w3.org/2001/XMLSchema#date> .
-<http://irkb.com/ir-ontology> <http://purl.org/dc/terms/creator> "Haula Galadima" .
-<http://irkb.com/ir-ontology> <http://purl.org/dc/terms/description> "A comprehensive ontology for modeling cybersecurity incident response processes" .
+<http://irkb.com/ir-ontology> <http://purl.org/dc/terms/creator> "Haula Galadima, Cormac Doherty, Rob Brennan" .
+<http://irkb.com/ir-ontology> <http://purl.org/dc/terms/description> "An ontology for modeling cybersecurity incident response processes" .
 <http://irkb.com/ir-ontology> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
 <http://irkb.com/ir-ontology> <http://purl.org/dc/terms/title> "Incident Response Ontology" .
 <http://irkb.com/ir-ontology> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
@@ -57,13 +57,6 @@
 <http://irkb.com/ir-ontology#assignedToCoa> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasCoaAssignedAnalyst. Links an analyst to the courses of action they are assigned to execute." .
 <http://irkb.com/ir-ontology#assignedToCoa> <http://www.w3.org/2000/01/rdf-schema#label> "assigned to COA" .
 # 
-# http://irkb.com/ir-ontology#authoredCommunication
-<http://irkb.com/ir-ontology#authoredCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://irkb.com/ir-ontology#authoredCommunication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Analyst> .
-<http://irkb.com/ir-ontology#authoredCommunication> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#ResponderCommunication> .
-<http://irkb.com/ir-ontology#authoredCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasCommunicationAuthor. Links an analyst to the communications they authored." .
-<http://irkb.com/ir-ontology#authoredCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "authored communication" .
-# 
 # http://irkb.com/ir-ontology#confirmedIncident
 <http://irkb.com/ir-ontology#confirmedIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://irkb.com/ir-ontology#confirmedIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Analyst> .
@@ -91,6 +84,13 @@
 <http://irkb.com/ir-ontology#generated> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#SecurityAnalysis> .
 <http://irkb.com/ir-ontology#generated> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of prov:wasGeneratedBy. Indicates a security event generated an analysis." .
 <http://irkb.com/ir-ontology#generated> <http://www.w3.org/2000/01/rdf-schema#label> "generated" .
+# 
+# http://irkb.com/ir-ontology#generatedChat
+<http://irkb.com/ir-ontology#generatedChat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://irkb.com/ir-ontology#generatedChat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#generatedChat> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#ResponderCommunication> .
+<http://irkb.com/ir-ontology#generatedChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of hasChatAnalyst. Links an analyst to the chat they generated." .
+<http://irkb.com/ir-ontology#generatedChat> <http://www.w3.org/2000/01/rdf-schema#label> "generated chat" .
 # 
 # http://irkb.com/ir-ontology#hadAssociatedEntity
 <http://irkb.com/ir-ontology#hadAssociatedEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -131,7 +131,7 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://irkb.com/ir-ontology#hasArtefact> <http://www.w3.org/2002/07/owl#inverseOf> <http://irkb.com/ir-ontology#isArtefactOf> .
 <http://irkb.com/ir-ontology#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Artefact> .
-<http://irkb.com/ir-ontology#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to related artefacts (evidence) collected during the investigation." .
+<http://irkb.com/ir-ontology#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to related artefacts/observables collected during the investigation." .
 <http://irkb.com/ir-ontology#hasArtefact> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact" .
 # 
 # http://irkb.com/ir-ontology#hasArtefactCreationAnalyst
@@ -141,6 +141,14 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://irkb.com/ir-ontology#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
 <http://irkb.com/ir-ontology#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an artefact to the analyst who collected, created, or documented it." .
 <http://irkb.com/ir-ontology#hasArtefactCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact creation analyst" .
+# 
+# http://irkb.com/ir-ontology#hasChatAnalyst
+<http://irkb.com/ir-ontology#hasChatAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://irkb.com/ir-ontology#hasChatAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <http://irkb.com/ir-ontology#generatedChat> .
+<http://irkb.com/ir-ontology#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
+<http://irkb.com/ir-ontology#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
+<http://irkb.com/ir-ontology#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a communication to the analyst who made the chat." .
+<http://irkb.com/ir-ontology#hasChatAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has chat analyst" .
 # 
 # http://irkb.com/ir-ontology#hasCoa
 <http://irkb.com/ir-ontology#hasCoa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -166,14 +174,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://irkb.com/ir-ontology#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a course of action to the analyst who created or planned it." .
 <http://irkb.com/ir-ontology#hasCoaCreationAnalyst> <http://www.w3.org/2000/01/rdf-schema#label> "has COA creation analyst" .
 # 
-# http://irkb.com/ir-ontology#hasCommunicationAuthor
-<http://irkb.com/ir-ontology#hasCommunicationAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://irkb.com/ir-ontology#hasCommunicationAuthor> <http://www.w3.org/2002/07/owl#inverseOf> <http://irkb.com/ir-ontology#authoredCommunication> .
-<http://irkb.com/ir-ontology#hasCommunicationAuthor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
-<http://irkb.com/ir-ontology#hasCommunicationAuthor> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Analyst> .
-<http://irkb.com/ir-ontology#hasCommunicationAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a communication to the analyst who authored it." .
-<http://irkb.com/ir-ontology#hasCommunicationAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "has communication author" .
-# 
 # http://irkb.com/ir-ontology#hasConfirmationAnalyst
 <http://irkb.com/ir-ontology#hasConfirmationAnalyst> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://irkb.com/ir-ontology#hasConfirmationAnalyst> <http://www.w3.org/2002/07/owl#inverseOf> <http://irkb.com/ir-ontology#confirmedIncident> .
@@ -190,12 +190,12 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://irkb.com/ir-ontology#hasEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Links an incident to one or more related security events that triggered or are part of it." .
 <http://irkb.com/ir-ontology#hasEvent> <http://www.w3.org/2000/01/rdf-schema#label> "has event" .
 # 
-# http://irkb.com/ir-ontology#hasPertainingCommunication
-<http://irkb.com/ir-ontology#hasPertainingCommunication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://irkb.com/ir-ontology#hasPertainingCommunication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
-<http://irkb.com/ir-ontology#hasPertainingCommunication> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#ResponderCommunication> .
-<http://irkb.com/ir-ontology#hasPertainingCommunication> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of pertainsToIncident. Links an incident to communications about it." .
-<http://irkb.com/ir-ontology#hasPertainingCommunication> <http://www.w3.org/2000/01/rdf-schema#label> "has pertaining communication" .
+# http://irkb.com/ir-ontology#hasPertainingChat
+<http://irkb.com/ir-ontology#hasPertainingChat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://irkb.com/ir-ontology#hasPertainingChat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
+<http://irkb.com/ir-ontology#hasPertainingChat> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#ResponderCommunication> .
+<http://irkb.com/ir-ontology#hasPertainingChat> <http://www.w3.org/2000/01/rdf-schema#comment> "Inverse of pertainsToIncident. Links an incident to a chat about it." .
+<http://irkb.com/ir-ontology#hasPertainingChat> <http://www.w3.org/2000/01/rdf-schema#label> "has pertaining chat" .
 # 
 # http://irkb.com/ir-ontology#isAnalysisOf
 <http://irkb.com/ir-ontology#isAnalysisOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -249,10 +249,10 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://irkb.com/ir-ontology#pertainsToIncident
 <http://irkb.com/ir-ontology#pertainsToIncident> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://irkb.com/ir-ontology#pertainsToIncident> <http://www.w3.org/2002/07/owl#inverseOf> <http://irkb.com/ir-ontology#hasPertainingCommunication> .
+<http://irkb.com/ir-ontology#pertainsToIncident> <http://www.w3.org/2002/07/owl#inverseOf> <http://irkb.com/ir-ontology#hasPertainingChat> .
 <http://irkb.com/ir-ontology#pertainsToIncident> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#ResponderCommunication> .
 <http://irkb.com/ir-ontology#pertainsToIncident> <http://www.w3.org/2000/01/rdf-schema#range> <http://irkb.com/ir-ontology#Incident> .
-<http://irkb.com/ir-ontology#pertainsToIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a communication to the incident it discusses." .
+<http://irkb.com/ir-ontology#pertainsToIncident> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a chat to the incident it discusses." .
 <http://irkb.com/ir-ontology#pertainsToIncident> <http://www.w3.org/2000/01/rdf-schema#label> "pertains to incident" .
 # 
 # http://irkb.com/ir-ontology#wasUsedBy
@@ -333,28 +333,28 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Analyst> .
 <http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for an analyst (e.g., employee ID)." .
+<http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for an analyst." .
 <http://irkb.com/ir-ontology#hasAnalystId> <http://www.w3.org/2000/01/rdf-schema#label> "has analyst ID" .
 # 
 # http://irkb.com/ir-ontology#hasArtefactCreationDateTime
 <http://irkb.com/ir-ontology#hasArtefactCreationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Artefact> .
 <http://irkb.com/ir-ontology#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://irkb.com/ir-ontology#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the artefact was created, collected, or observed." .
+<http://irkb.com/ir-ontology#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the artefact was collected." .
 <http://irkb.com/ir-ontology#hasArtefactCreationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact creation datetime" .
 # 
 # http://irkb.com/ir-ontology#hasArtefactDataValue
 <http://irkb.com/ir-ontology#hasArtefactDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Artefact> .
 <http://irkb.com/ir-ontology#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The actual content or value of the artefact (e.g., \"192.0.2.1\", \"a1b2c3d4e5...\")." .
+<http://irkb.com/ir-ontology#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The actual content or value of the artefact ." .
 <http://irkb.com/ir-ontology#hasArtefactDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact data value" .
 # 
 # http://irkb.com/ir-ontology#hasArtefactType
 <http://irkb.com/ir-ontology#hasArtefactType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Artefact> .
 <http://irkb.com/ir-ontology#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of the artefact (e.g., FileHash, IPAddress, URL, UserAgent)." .
+<http://irkb.com/ir-ontology#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of the artefact." .
 <http://irkb.com/ir-ontology#hasArtefactType> <http://www.w3.org/2000/01/rdf-schema#label> "has artefact type" .
 # 
 # http://irkb.com/ir-ontology#hasChatMessage
@@ -410,14 +410,14 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#CourseOfAction> .
 <http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Current execution status of the course of action (e.g., Planned, In Progress, Completed, Failed)." .
+<http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Current execution status of the course of action." .
 <http://irkb.com/ir-ontology#hasCoaStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has COA status" .
 # 
 # http://irkb.com/ir-ontology#hasConfirmationDateTime
 <http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
-<http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the incident was confirmed as genuine." .
+<http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Timestamp when the incident was confirmed" .
 <http://irkb.com/ir-ontology#hasConfirmationDateTime> <http://www.w3.org/2000/01/rdf-schema#label> "has confirmation datetime" .
 # 
 # http://irkb.com/ir-ontology#hasEndDateTime
@@ -452,14 +452,14 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
 <http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for a security event (e.g., from SIEM or IDS)." .
+<http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for a security event." .
 <http://irkb.com/ir-ontology#hasEventId> <http://www.w3.org/2000/01/rdf-schema#label> "has event ID" .
 # 
 # http://irkb.com/ir-ontology#hasEventTitle
 <http://irkb.com/ir-ontology#hasEventTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityEvent> .
 <http://irkb.com/ir-ontology#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Short title or name for the security event." .
+<http://irkb.com/ir-ontology#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "Short description or name for the security event." .
 <http://irkb.com/ir-ontology#hasEventTitle> <http://www.w3.org/2000/01/rdf-schema#label> "has event title" .
 # 
 # http://irkb.com/ir-ontology#hasIncidentCreationDateTime
@@ -473,14 +473,14 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of an incident's nature, impact, and scope." .
+<http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed description of an incident. " .
 <http://irkb.com/ir-ontology#hasIncidentDescription> <http://www.w3.org/2000/01/rdf-schema#label> "has incident description" .
 # 
 # http://irkb.com/ir-ontology#hasIncidentId
 <http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for an incident (e.g., INC-2025-001)." .
+<http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifier for an incident." .
 <http://irkb.com/ir-ontology#hasIncidentId> <http://www.w3.org/2000/01/rdf-schema#label> "has incident ID" .
 # 
 # http://irkb.com/ir-ontology#hasIncidentName
@@ -494,7 +494,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
 <http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity level of an incident (e.g., Low, Medium, High, Critical)." .
+<http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#comment> "The severity level of an incident (Low, Medium, High, Critical)." .
 <http://irkb.com/ir-ontology#hasIncidentSeverity> <http://www.w3.org/2000/01/rdf-schema#label> "has incident severity" .
 # 
 # http://irkb.com/ir-ontology#hasIncidentStage
@@ -511,18 +511,11 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#hasIncidentStatus> <http://www.w3.org/2000/01/rdf-schema#comment> "Current status of the incident." .
 <http://irkb.com/ir-ontology#hasIncidentStatus> <http://www.w3.org/2000/01/rdf-schema#label> "has incident status" .
 # 
-# http://irkb.com/ir-ontology#hasIncidentType
-<http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#Incident> .
-<http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#comment> "Classification of the incident." .
-<http://irkb.com/ir-ontology#hasIncidentType> <http://www.w3.org/2000/01/rdf-schema#label> "has incident type" .
-# 
 # http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The data value resulting from analysis (e.g., \"C2 Server IP\", \"Malware Family Name\")." .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The data value to be analysed." .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis data value" .
 # 
 # http://irkb.com/ir-ontology#hasSecurityAnalysisDateTime
@@ -536,15 +529,15 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed findings and conclusions from the analysis." .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#comment> "Detailed findings from the analysis." .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisDetails> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis details" .
 # 
 # http://irkb.com/ir-ontology#hasSecurityAnalysisType
 <http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://irkb.com/ir-ontology#SecurityAnalysis> .
 <http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of analysis performed (e.g., Malware Analysis, Network Analysis, Timeline Analysis)." .
-<http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis type" .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of analysis performed." .
+<http://irkb.com/ir-ontology#hasSecurityAnalysisType> <http://www.w3.org/2000/01/rdf-schema#label> "has security analysis data type" .
 # 
 # 
 # 
@@ -568,7 +561,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://irkb.com/ir-ontology#Artefact
 <http://irkb.com/ir-ontology#Artefact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://irkb.com/ir-ontology#Artefact> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable piece of evidence collected from an incident (e.g., file hash, IP address, log entry)." .
+<http://irkb.com/ir-ontology#Artefact> <http://www.w3.org/2000/01/rdf-schema#comment> "An observable piece of evidence collected from an incident." .
 <http://irkb.com/ir-ontology#Artefact> <http://www.w3.org/2000/01/rdf-schema#label> "Artefact" .
 # 
 # http://irkb.com/ir-ontology#Containment
@@ -618,7 +611,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://irkb.com/ir-ontology#SecurityAnalysis
 <http://irkb.com/ir-ontology#SecurityAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://irkb.com/ir-ontology#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "The analysis of observables from security events leading to an incident conclusion." .
+<http://irkb.com/ir-ontology#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "The analysis of observables from security events leading to an incident" .
 <http://irkb.com/ir-ontology#SecurityAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Security Analysis" .
 # 
 # http://irkb.com/ir-ontology#SecurityEvent
@@ -630,7 +623,7 @@ _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://irkb.com/ir-ontology#SecurityEventAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://irkb.com/ir-ontology#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://irkb.com/ir-ontology#SecurityEvent> .
 <http://irkb.com/ir-ontology#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#comment> "A specific action taken or observed within a security event." .
-<http://irkb.com/ir-ontology#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#label> "Event Action" .
+<http://irkb.com/ir-ontology#SecurityEventAction> <http://www.w3.org/2000/01/rdf-schema#label> "Security Event Action" .
 # 
 # http://irkb.com/ir-ontology#Tier1
 <http://irkb.com/ir-ontology#Tier1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .

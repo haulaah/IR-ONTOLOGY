@@ -8,4 +8,4 @@
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 	 prov:wasGeneratedAt "2025-06-01";
 .
-:agent0 a prov:Agent; foaf:name "Haula Galadima".
+:agent0 a prov:Agent; foaf:name "Haula Galadima, Cormac Doherty, Rob Brennan".

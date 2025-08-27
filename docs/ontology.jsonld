@@ -70,10 +70,10 @@
     "@value" : "2025-06-01"
   } ],
   "http://purl.org/dc/terms/creator" : [ {
-    "@value" : "Haula Galadima"
+    "@value" : "Haula Galadima, Cormac Doherty, Rob Brennan"
   } ],
   "http://purl.org/dc/terms/description" : [ {
-    "@value" : "A comprehensive ontology for modeling cybersecurity incident response processes"
+    "@value" : "An ontology for modeling cybersecurity incident response processes"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@id" : "https://creativecommons.org/licenses/by/4.0/"
@@ -109,7 +109,7 @@
   "@id" : "http://irkb.com/ir-ontology#Artefact",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "An observable piece of evidence collected from an incident (e.g., file hash, IP address, log entry)."
+    "@value" : "An observable piece of evidence collected from an incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Artefact"
@@ -205,7 +205,7 @@
   "@id" : "http://irkb.com/ir-ontology#SecurityAnalysis",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The analysis of observables from security events leading to an incident conclusion."
+    "@value" : "The analysis of observables from security events leading to an incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@value" : "Security Analysis"
@@ -226,7 +226,7 @@
     "@value" : "A specific action taken or observed within a security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "Event Action"
+    "@value" : "Security Event Action"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://irkb.com/ir-ontology#SecurityEvent"
@@ -281,21 +281,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://irkb.com/ir-ontology#CourseOfAction"
-  } ]
-}, {
-  "@id" : "http://irkb.com/ir-ontology#authoredCommunication",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Inverse of hasCommunicationAuthor. Links an analyst to the communications they authored."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://irkb.com/ir-ontology#Analyst"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "authored communication"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://irkb.com/ir-ontology#ResponderCommunication"
   } ]
 }, {
   "@id" : "http://irkb.com/ir-ontology#confirmedIncident",
@@ -356,6 +341,21 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://irkb.com/ir-ontology#SecurityAnalysis"
+  } ]
+}, {
+  "@id" : "http://irkb.com/ir-ontology#generatedChat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Inverse of hasChatAnalyst. Links an analyst to the chat they generated."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://irkb.com/ir-ontology#Analyst"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "generated chat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://irkb.com/ir-ontology#ResponderCommunication"
   } ]
 }, {
   "@id" : "http://irkb.com/ir-ontology#hadAssociatedEntity",
@@ -427,7 +427,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasAnalystId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Unique identifier for an analyst (e.g., employee ID)."
+    "@value" : "Unique identifier for an analyst."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#Analyst"
@@ -442,7 +442,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasArtefact",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Links an incident to related artefacts (evidence) collected during the investigation."
+    "@value" : "Links an incident to related artefacts/observables collected during the investigation."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#Incident"
@@ -478,7 +478,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasArtefactCreationDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Timestamp when the artefact was created, collected, or observed."
+    "@value" : "Timestamp when the artefact was collected."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#Artefact"
@@ -493,7 +493,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasArtefactDataValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The actual content or value of the artefact (e.g., \"192.0.2.1\", \"a1b2c3d4e5...\")."
+    "@value" : "The actual content or value of the artefact ."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#Artefact"
@@ -508,7 +508,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasArtefactType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Classification of the artefact (e.g., FileHash, IPAddress, URL, UserAgent)."
+    "@value" : "Classification of the artefact."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#Artefact"
@@ -518,6 +518,24 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://irkb.com/ir-ontology#hasChatAnalyst",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Links a communication to the analyst who made the chat."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://irkb.com/ir-ontology#ResponderCommunication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has chat analyst"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://irkb.com/ir-ontology#Analyst"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://irkb.com/ir-ontology#generatedChat"
   } ]
 }, {
   "@id" : "http://irkb.com/ir-ontology#hasChatMessage",
@@ -682,7 +700,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasCoaStatus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Current execution status of the course of action (e.g., Planned, In Progress, Completed, Failed)."
+    "@value" : "Current execution status of the course of action."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#CourseOfAction"
@@ -692,24 +710,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://irkb.com/ir-ontology#hasCommunicationAuthor",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Links a communication to the analyst who authored it."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://irkb.com/ir-ontology#ResponderCommunication"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has communication author"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://irkb.com/ir-ontology#Analyst"
-  } ],
-  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://irkb.com/ir-ontology#authoredCommunication"
   } ]
 }, {
   "@id" : "http://irkb.com/ir-ontology#hasConfirmationAnalyst",
@@ -733,7 +733,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasConfirmationDateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Timestamp when the incident was confirmed as genuine."
+    "@value" : "Timestamp when the incident was confirmed"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#Incident"
@@ -826,7 +826,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasEventId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Unique identifier for a security event (e.g., from SIEM or IDS)."
+    "@value" : "Unique identifier for a security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#SecurityEvent"
@@ -841,7 +841,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasEventTitle",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Short title or name for the security event."
+    "@value" : "Short description or name for the security event."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#SecurityEvent"
@@ -871,7 +871,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasIncidentDescription",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Detailed description of an incident's nature, impact, and scope."
+    "@value" : "Detailed description of an incident. "
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#Incident"
@@ -886,7 +886,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasIncidentId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Unique identifier for an incident (e.g., INC-2025-001)."
+    "@value" : "Unique identifier for an incident."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#Incident"
@@ -916,7 +916,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasIncidentSeverity",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The severity level of an incident (e.g., Low, Medium, High, Critical)."
+    "@value" : "The severity level of an incident (Low, Medium, High, Critical)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#Incident"
@@ -958,31 +958,16 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://irkb.com/ir-ontology#hasIncidentType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Classification of the incident."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://irkb.com/ir-ontology#Incident"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has incident type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://irkb.com/ir-ontology#hasPertainingCommunication",
+  "@id" : "http://irkb.com/ir-ontology#hasPertainingChat",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Inverse of pertainsToIncident. Links an incident to communications about it."
+    "@value" : "Inverse of pertainsToIncident. Links an incident to a chat about it."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#Incident"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has pertaining communication"
+    "@value" : "has pertaining chat"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://irkb.com/ir-ontology#ResponderCommunication"
@@ -991,7 +976,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasSecurityAnalysisDataValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The data value resulting from analysis (e.g., \"C2 Server IP\", \"Malware Family Name\")."
+    "@value" : "The data value to be analysed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#SecurityAnalysis"
@@ -1021,7 +1006,7 @@
   "@id" : "http://irkb.com/ir-ontology#hasSecurityAnalysisDetails",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Detailed findings and conclusions from the analysis."
+    "@value" : "Detailed findings from the analysis."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#SecurityAnalysis"
@@ -1036,13 +1021,13 @@
   "@id" : "http://irkb.com/ir-ontology#hasSecurityAnalysisType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "The type of analysis performed (e.g., Malware Analysis, Network Analysis, Timeline Analysis)."
+    "@value" : "The type of analysis performed."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#SecurityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "has security analysis type"
+    "@value" : "has security analysis data type"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1141,7 +1126,7 @@
   "@id" : "http://irkb.com/ir-ontology#pertainsToIncident",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Links a communication to the incident it discusses."
+    "@value" : "Links a chat to the incident it discusses."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://irkb.com/ir-ontology#ResponderCommunication"
@@ -1153,7 +1138,7 @@
     "@id" : "http://irkb.com/ir-ontology#Incident"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
-    "@id" : "http://irkb.com/ir-ontology#hasPertainingCommunication"
+    "@id" : "http://irkb.com/ir-ontology#hasPertainingChat"
   } ]
 }, {
   "@id" : "http://irkb.com/ir-ontology#wasUsedBy",
